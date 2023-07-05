@@ -1,4 +1,4 @@
-import { ABOUT, apple, bill, google } from "../assets";
+import { ABOUT  } from "../assets";
 import styles, { layout } from "../style";
 
 const AboutUs = () => (

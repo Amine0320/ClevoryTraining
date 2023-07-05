@@ -1,7 +1,7 @@
 import styles from "../style";
 import {  HERO  } from "../assets";
 import GetStarted from "./GetStarted";
-
+// First SECTION AFTER NAVBAR HERE !
 const Hero = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { close, menu , LOGO1  } from "../assets";
 import { navLinks } from "../constants";
 import React, { useEffect } from 'react';
+import { NavDropdown } from "react-bootstrap"; 
 // const Navbar = () => {
 //   const [active, setActive] = useState("Home");
 //   const [toggle, setToggle] = useState(false);
@@ -90,8 +91,13 @@ const Navbar = () => {
             onClick={() => setActive(nav.title)}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
+          </li> 
         ))}
+      </ul>
+      <ul>
+        <li className="ml-10">
+          <a href="/login">LOGIN</a> 
+        </li>
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
@@ -114,12 +120,12 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
+                <a href={`#${nav.id}`}>{nav.title}</a>  
+              </li> 
             ))}
           </ul>
         </div>
-      </div>
+      </div> 
     </nav>
   );
 };

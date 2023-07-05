@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {main} from "../assets" ; 
+// use it in the course section ! 
 // card by react bootstrap ! 
 function Card1() {
   return (

@@ -1,3 +1,4 @@
+// THIS FILE TO FACILTATE THE EXPORTATION OF THE COMPONENTS ! 
 import Navbar from "./Navbar";
 import AboutUs from "./AboutUs";
 // import CardDeal from "./CardDeal";

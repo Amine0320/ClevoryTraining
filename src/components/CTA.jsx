@@ -6,7 +6,7 @@ const CTA = () => (
     <div className="flex-1 flex flex-col">
       <h2 className={styles.heading2}>Cherchez une fromation !</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-         molestias  Eius, molestias!
+         paragraphe ici 
       </p>
     </div> 
     <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
