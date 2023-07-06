@@ -1,7 +1,6 @@
 import styles from "./style";
 import {  AboutUs ,  Clients, CTA, Footer, Navbar, Stats, Hero, Purpose  } from "./components";
 import Partenaires from "./components/Partenaires";
-// import AuthPage from "./components/auth/AuthPage" ; 
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
