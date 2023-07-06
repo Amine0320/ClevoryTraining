@@ -95,8 +95,8 @@ const Navbar = () => {
         ))}
       </ul>
       <ul>
-        <li className="ml-10">
-          <a href="/login">LOGIN</a> 
+        <li className="ml-10"> 
+          <a href="/login">Login</a> 
         </li>
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
