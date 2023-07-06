@@ -153,6 +153,21 @@
   position: fixed;
   top: 0;
   z-index: 999; 
-  background-color: black;
+  background-color: #332d3a;
 } 
 
+/* Css for partenaires and clients logo to delete the white background and adjust them  */ 
+.img {
+  width: 15%; 
+  aspect-ratio: 4/3; 
+  object-fit: contain; 
+  mix-blend-mode: color-burn; 
+
+}
+/* Css for The Title of Partenaires and Clients Here */
+.Titre {
+  transform: translate(35%, -50%) ; 
+}
+.Titre1 { 
+  transform: translate(25%, -50%) ;  
+}
