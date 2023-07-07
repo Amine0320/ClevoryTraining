@@ -2,7 +2,8 @@ import { useState } from "react";
 import { close, menu , LOGO1  } from "../assets";
 import { navLinks } from "../constants";
 import React, { useEffect } from 'react';
-import { NavDropdown } from "react-bootstrap"; 
+// import { NavDropdown } from "react-bootstrap";
+import styles from '../style' ;  
 // const Navbar = () => {
 //   const [active, setActive] = useState("Home");
 //   const [toggle, setToggle] = useState(false);
@@ -74,6 +75,9 @@ const Navbar = () => {
   }, []);
 
   return (
+    <div className="bg-primary w-full overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}> 
     <nav
       className={`w-full flex py-6 justify-between items-center navbar ${
         navbarFixed ? "navbar-fixed" : ""
@@ -90,15 +94,15 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`${nav.link}`}>{nav.title}</a> 
           </li> 
         ))}
       </ul>
-      <ul>
+      {/* <ul> 
         <li className="ml-10"> 
           <a href="/login">Login</a> 
         </li>
-      </ul>
+      </ul>  */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu}
@@ -127,6 +131,9 @@ const Navbar = () => {
         </div>
       </div> 
     </nav>
+    </div>
+    </div>
+    </div>
   );
 };
 export default Navbar;

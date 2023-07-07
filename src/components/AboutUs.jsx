@@ -2,6 +2,8 @@ import { ABOUT  } from "../assets";
 import styles, { layout } from "../style";
 
 const AboutUs = () => (
+  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <img src={ABOUT} alt="AboutUs" className="w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" />
@@ -26,6 +28,8 @@ Avec une large offre dans le domaine des TIC, du management et des soft skills. 
         <img src={google} alt="google_play" className="w-[144.17px] h-[43.08px] object-contain cursor-pointer" />
       </div> */} 
     </div>
-  </section>
+  </section> 
+  </div>
+  </div>
 );
 export default AboutUs ; 

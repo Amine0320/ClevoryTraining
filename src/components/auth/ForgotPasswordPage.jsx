@@ -4,7 +4,7 @@ import './index.css';
 const ForgotPasswordPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your logic to handle the form submission and password recovery process here
+    // Submission and password recovery here ! 
   };
 
   return (

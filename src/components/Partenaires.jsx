@@ -3,7 +3,8 @@ import styles from "../style";
 import React from 'react'; 
 import '../index.css' ; 
 const partenaires= () => (
-
+  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}> 
     <h2 className={`${styles.heading2} Titre `}>
@@ -16,6 +17,8 @@ const partenaires= () => (
       ))}
     </div>
   </section>  
+  </div>
+  </div>
   );
 
 export default partenaires ;  

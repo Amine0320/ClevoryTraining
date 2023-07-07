@@ -6,26 +6,32 @@ export const navLinks = [
   {
     id: "Clevory Training",
     title: "Clevory Training",
+    link:"Hero", 
   },
   {
     id: "Nos Formations",
     title: "Nos Formations",
+    link:"",
   },
   {
     id: "Nos solutions",
     title: "Nos solutions",
+    link:"",
   },
   {
     id: "Calendrier",
     title: "Calendrier",
+    link:"",
   },
   {
     id: "Ressources",
     title: "Ressources",
+    link:"",
   },
   {
     id: "News",
     title: "News",
+    link:"", 
   },
   // {
   //   id: "Login",
@@ -40,6 +46,7 @@ export const features = [
     title: "Nos Formations",
     content:
       "Découvrez nos offres de formations IT, Telco, Gestion de Projet et ITSM",
+    link:"https://www.instagram.com/clevorytraining/?hl=fr" , 
   },
   {
     id: "feature-2",
@@ -47,6 +54,7 @@ export const features = [
     title: "Accompagnement",
     content:
       "Au-delà de la formation, nou proposons à nos client du support sur mesure.",
+      link:"https://www.instagram.com/clevorytraining/?hl=fr" , 
   },
   {
     id: "feature-3",
@@ -54,6 +62,7 @@ export const features = [
     title: "Location de salles",
     content:
       "Location des salles de formation et réunion avec toutes les commoditées.",
+      link:"https://www.instagram.com/clevorytraining/?hl=fr" , 
   },
   {
     id: "feature-4",
@@ -61,6 +70,7 @@ export const features = [
     title: "CO Working",
     content:
       "Location de bureaux privatifs dans open space avec toutes les commodités.",
+      link:"https://www.instagram.com/clevorytraining/?hl=fr" ,  
   },
 ];
 // TESTIMONIALS SECTION 

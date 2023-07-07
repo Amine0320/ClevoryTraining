@@ -1,35 +1,26 @@
-import styles from "./style";
 import {  AboutUs ,  Clients, CTA, Footer, Navbar, Stats, Hero, Purpose  } from "./components";
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
+import Tree from "./tree";
+import './index.css' ; 
+
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar /> 
-      </div>
-    </div> 
-    <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div> 
-    </div> 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Partenaires />  
-        <AboutUs/> 
-        <Stats/>
-        {/* <Routes>
-          <Route path="/login" element={<AuthPage/>} /> 
-        </Routes> */}
-        <Purpose /> 
-        {/* <CardDeal /> */} 
-        {/* <Testimonials /> */}
-        <CTA /> 
-        <Clients/> 
-        <Footer />
-      </div>
-    </div>
-  </div> 
-);
+<div className="router"> 
+<Router> 
+ {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
+      <Navbar/> 
+        <Routes> 
+          <Route path='/' element={<Tree/>}/>  
+          <Route path='/Hero' element={<Hero/>}/>  
+          <Route path='/Partenaires' element={<Partenaires/>}/>
+          <Route path='/About' element={<AboutUs/>}/> 
+          <Route path='/Stats' element={<Stats/>}/>
+          <Route path='/Purpose' element={<Purpose/>}/>
+          <Route path='/Cta' element={<CTA/>}/> 
+          <Route path='/Clients' element={<Clients/>}/> 
+        </Routes> 
+    </Router> 
+    <Footer/> 
+</div> 
+); 
 export default App;

@@ -20,8 +20,7 @@ const AuthPage = () => {
     signUpButton.addEventListener('click', handleSignUpClick);
     signInButton.addEventListener('click', handleSignInClick);
 
-    return () => {
-      // Clean up the event listeners when the component unmounts
+    return () => { 
       signUpButton.removeEventListener('click', handleSignUpClick);
       signInButton.removeEventListener('click', handleSignInClick);
     };

@@ -171,3 +171,7 @@
 .Titre1 { 
   transform: translate(25%, -50%) ;  
 }
+/* css for the app.jsx  */ 
+.router {
+overflow-x: hidden;
+} 

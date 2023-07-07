@@ -1,11 +1,12 @@
 import { clients } from "../constants"; 
 import styles from "../style";
 import React from 'react';
-import { useState} from "react";
-import Carousel from 'react-bootstrap/Carousel';  
+// import { useState} from "react";
+// import Carousel from 'react-bootstrap/Carousel';  
 import '../index.css' ; 
 const Clients = () => (
-
+<div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}> 
     <h2 className={`${styles.heading2} Titre1 `}>
@@ -18,6 +19,8 @@ const Clients = () => (
       ))}
     </div>
   </section> 
+  </div>
+  </div>
   );
 
 export default Clients; 

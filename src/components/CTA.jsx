@@ -2,6 +2,8 @@ import styles from "../style";
 import Button from "./Button";
 
 const CTA = () => (
+  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
   <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
     <div className="flex-1 flex flex-col">
       <h2 className={styles.heading2}>Cherchez une fromation !</h2>
@@ -13,6 +15,8 @@ const CTA = () => (
       <Button />
     </div>
   </section>
+  </div>
+  </div>
 );
 
 export default CTA;

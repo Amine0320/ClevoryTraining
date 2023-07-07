@@ -19,9 +19,11 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Purpose = () =>  (
+  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}> 
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
+      <h2 className={`${styles.heading2} mb-10`}> 
       Ce Que Nous Offrons <br className="sm:block hidden" />
       </h2>
       <img src={PURPOSE} alt="AboutUs" className="w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" />
@@ -29,11 +31,16 @@ const Purpose = () =>  (
       </p> */} 
       {/* <Button styles={`mt-10`} /> */}
     </div>  
-    <div className={`${layout.sectionImg} flex-col`}>
+    <div className={`${layout.sectionImg} flex-col `}>
       {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
+        // <FeatureCard key={feature.id} {...feature} index={index} /> 
+        <a key={feature.id} href={feature.link}>
+        <FeatureCard {...feature} index={index} />
+      </a>  
       ))}
-    </div>
+    </div> 
   </section>
+  </div>
+  </div>
 );
 export default Purpose;
