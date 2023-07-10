@@ -33,10 +33,11 @@ export const navLinks = [
     title: "News",
     link:"", 
   },
-  // {
-  //   id: "Login",
-  //   title: "Login",
-  // },
+  {
+    id: "Login",
+    title: "Login",
+    link : "Auth" , 
+  },
 ];
 // FEATURES SECTION 
 export const features = [

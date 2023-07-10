@@ -18,13 +18,13 @@ const Hero = () => {
         </div> */} 
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-black ss:leading-[100.8px] leading-[75px]">
             Learning 
             <span className="text-gradient">Today</span>{" "}
           </h1> 
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-black ss:leading-[100.8px] leading-[75px] w-full">
           Leading <span className="text-gradient">Tomorrow</span>
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>

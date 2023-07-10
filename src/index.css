@@ -32,6 +32,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  font-size: 60px;
 }
 
 .bg-blue-gradient {
@@ -151,11 +152,20 @@
 /* new css for navbar  */ 
 .navbar-fixed {
   position: fixed;
+  background-color: white;
   top: 0;
   z-index: 999; 
-  background-color: #332d3a;
+  margin-left: 0px; 
 } 
-
+.nav {
+  background-color: fffbff ; 
+  display: flex; 
+}
+.logo-nav {
+  margin-left: 0px;
+  margin-right: 300px;
+  width: 150px; 
+}  
 /* Css for partenaires and clients logo to delete the white background and adjust them  */ 
 .img {
   width: 15%; 
@@ -167,10 +177,15 @@
 /* Css for The Title of Partenaires and Clients Here */
 .Titre {
   transform: translate(35%, -50%) ; 
+  color: #11101d  ;
+  margin-right: 550px;
+
 }
 .Titre1 { 
   transform: translate(25%, -50%) ;  
-}
+  color: #11101d  ;
+  margin-right: 250px;
+} 
 /* css for the app.jsx  */ 
 .router {
 overflow-x: hidden;
@@ -188,9 +203,8 @@ overflow-x: hidden;
 }
 .test2{
   width: 300px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-
+  border-radius: 30px; 
+  margin-bottom: 10px; 
 }
 .test3{
   width: 300px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './Auth.css';
 
 const ForgotPasswordPage = () => {
   const handleSubmit = (event) => {

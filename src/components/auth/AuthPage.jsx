@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './index.css';
+import './Auth.css' ; 
 
 const AuthPage = () => {
   useEffect(() => {
@@ -45,7 +45,7 @@ const AuthPage = () => {
           <h1>Sign in</h1>
           <input type="text" placeholder="Email OR Username" name="username" />
           <input type="password" placeholder="Password" name="password" />
-          <a href="forgetPassword.html">Forgot your password?</a>
+          <a href="/forget">Forgot your password?</a> 
           <button type="submit" value="submit" name="submit">Sign In</button>
         </form>
       </div>

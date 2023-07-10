@@ -1,15 +1,12 @@
 import {  AboutUs ,  Clients, CTA, Stats, Hero, Purpose,  } from "./components";
 import Partenaires from "./components/Partenaires";
 const Tree = () => (
-<div> 
-    {/* <Loader />  */}
+<div>  
     <Hero />
     <Partenaires />  
     <AboutUs/> 
     <Stats/> 
-    <Purpose /> 
-    {/* <CardDeal /> */} 
-    {/* <Testimonials /> */}
+    <Purpose />  
     <CTA /> 
     <Clients/> 
 </div> 

@@ -20,7 +20,7 @@ const Clients = () => (
       <div className={`${styles.boxWidth}`}>
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}> 
-    <h2 className={`${styles.heading2} Titre1 `}>
+    <h2 className={`${styles.heading2} Titre1 text-black `}>
       Ce qui nous a fait confiance  <br className="sm:block hidden" />
       </h2>
       {clients.map((client) => (

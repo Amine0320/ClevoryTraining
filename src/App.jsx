@@ -1,4 +1,4 @@
-import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose ,  NavBar1   } from "./components";
+import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage ,    } from "./components";
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./tree";
@@ -8,9 +8,11 @@ const App = () => (
 <div className="router"> 
 <Router> 
  {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
-      <NavBar1/> 
+      <Navbar /> 
         <Routes> 
-          <Route path='/' element={<Tree/>}/>  
+          <Route path='/forget' element={<ForgotPasswordPage/>}/>  
+          <Route path='/Auth' element={<AuthPage/>}/>   
+          <Route path='/' element={<Tree/>}/>   
           <Route path='/Hero' element={<Hero/>}/>  
           <Route path='/Partenaires' element={<Partenaires/>}/> 
           <Route path='/About' element={<AboutUs/>}/> 
