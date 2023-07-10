@@ -1,9 +1,20 @@
 import { clients } from "../constants"; 
 import styles from "../style";
 import React from 'react';
-// import { useState} from "react";
-// import Carousel from 'react-bootstrap/Carousel';  
+import { useState} from "react";
+import Carousel from 'react-bootstrap/Carousel';  
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import '../index.css' ; 
+
+
+const scrollImages = (scrollAmount) => {
+  const scrollContainer = document.querySelector('.scroll-container');
+  if (scrollContainer) {
+    scrollContainer.scrollLeft += scrollAmount;
+  }
+};
+
+
 const Clients = () => (
 <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
@@ -14,15 +25,21 @@ const Clients = () => (
       </h2>
       {clients.map((client) => (
         <div key={client.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-5`}>
-          <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain img " />
+          <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain img" />
         </div>
       ))}
     </div>
+    <button onClick={() => scrollImages(-300)}>
+  <FaAngleLeft />
+</button>
+<button onClick={() => scrollImages(300)}>
+  <FaAngleRight />
+</button> 
   </section> 
   </div>
-  </div>
-  );
+  </div> 
 
+  ); 
 export default Clients; 
 // NEW CODE HERE 
 // function Clients() {

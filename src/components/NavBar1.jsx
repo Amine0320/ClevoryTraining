@@ -1,121 +1,166 @@
-// import React, { useState } from "react";
-// import Navbar from "react-bootstrap/Navbar";
-// import Nav from "react-bootstrap/Nav";
-// import Container from "react-bootstrap/Container";
-// import LOGO1 from "../assets/LOGO1.png"; 
-// import Button from "react-bootstrap/Button";
-// import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
-// import { ImBlog } from "react-icons/im";
-// import { 
-//   AiFillStar,
-//   AiOutlineHome,
-//   AiOutlineFundProjectionScreen,
-//   AiOutlineUser,
-// } from "react-icons/ai";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Collapse,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container,
+  Row,
+  Col,
+  UncontrolledTooltip,
+} from "reactstrap";
 
-// import { CgFileDocument } from "react-icons/cg";
+const NavBar1 = () => {
+  const [collapseOpen, setCollapseOpen] = useState(false);
+  const [collapseOut, setCollapseOut] = useState("");
+  const [color, setColor] = useState("navbar-transparent");
 
-// function NavBar1() { 
-//   const [expand, updateExpanded] = useState(false);
-//   const [navColour, updateNavbar] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
 
-//   function scrollHandler() {
-//     if (window.scrollY >= 20) {
-//       updateNavbar(true);
-//     } else {
-//       updateNavbar(false);
-//     }
-//   }
+  const changeColor = () => {
+    if (
+      document.documentElement.scrollTop > 99 ||
+      document.body.scrollTop > 99
+    ) {
+      setColor("bg-info");
+    } else if (
+      document.documentElement.scrollTop < 100 ||
+      document.body.scrollTop < 100
+    ) {
+      setColor("navbar-transparent");
+    }
+  };
 
-//   window.addEventListener("scroll", scrollHandler);
+  const toggleCollapse = () => {
+    document.documentElement.classList.toggle("nav-open");
+    setCollapseOpen(!collapseOpen);
+  };
 
-//   return (
-//     <Navbar
-//       expanded={expand}
-//       fixed="top"
-//       expand="md"
-//       className={navColour ? "sticky" : "navbar"}
-//     >
-//       <Container>
-//         <Navbar.Brand href="/" className="d-flex">
-//           <img src={LOGO1} className="img-fluid logo" alt="brand" />
-//         </Navbar.Brand>
-//         <Navbar.Toggle
-//           aria-controls="responsive-navbar-nav"
-//           onClick={() => {
-//             updateExpanded(expand ? false : "expanded");
-//           }}
-//         >
-//           <span></span>
-//           <span></span>
-//           <span></span>
-//         </Navbar.Toggle>
-//         <Navbar.Collapse id="responsive-navbar-nav">
-//           <Nav className="ms-auto" defaultActiveKey="#home">
-//             <Nav.Item>
-//               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-//                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-//               </Nav.Link>
-//             </Nav.Item>
-//             <Nav.Item>
-//               <Nav.Link
-//                 as={Link}
-//                 to="/about"
-//                 onClick={() => updateExpanded(false)}
-//               >
-//                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-//               </Nav.Link>
-//             </Nav.Item>
+  const onCollapseExiting = () => {
+    setCollapseOut("collapsing-out");
+  };
 
-//             <Nav.Item>
-//               <Nav.Link
-//                 as={Link}
-//                 to="/project"
-//                 onClick={() => updateExpanded(false)}
-//               >
-//                 <AiOutlineFundProjectionScreen
-//                   style={{ marginBottom: "2px" }}
-//                 />{" "}
-//                 Projects
-//               </Nav.Link>
-//             </Nav.Item>
+  const onCollapseExited = () => {
+    setCollapseOut("");
+  };
 
-//             <Nav.Item>
-//               <Nav.Link
-//                 as={Link}
-//                 to="/resume"
-//                 onClick={() => updateExpanded(false)}
-//               >
-//                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-//               </Nav.Link>
-//             </Nav.Item>
+  return (
+    <Navbar className={`fixed-top ${color}`} expand="lg">
+      <Container>
+        <div className="navbar-translate">
+          <NavbarBrand to="/" id="navbar-brand" tag={Link}>
+            <span>BLK• </span>
+            Design System React
+          </NavbarBrand>
+          <UncontrolledTooltip placement="bottom" target="navbar-brand">
+            Designed and Coded by Creative Tim
+          </UncontrolledTooltip>
+          <button
+            aria-expanded={collapseOpen}
+            className="navbar-toggler navbar-toggler"
+            onClick={toggleCollapse}
+          >
+            <span className="navbar-toggler-bar bar1" />
+            <span className="navbar-toggler-bar bar2" />
+            <span className="navbar-toggler-bar bar3" />
+          </button>
+        </div>
+        <Collapse
+          className={`justify-content-end ${collapseOut}`}
+          navbar
+          isOpen={collapseOpen}
+          onExiting={onCollapseExiting}
+          onExited={onCollapseExited}
+        >
+          <div className="navbar-collapse-header">
+            <Row>
+              <Col className="collapse-brand" xs="6">
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  BLK•React
+                </a>
+              </Col>
+              <Col className="collapse-close text-right" xs="6">
+                <button
+                  aria-expanded={collapseOpen}
+                  className="navbar-toggler"
+                  onClick={toggleCollapse}
+                >
+                  <i className="tim-icons icon-simple-remove" />
+                </button>
+              </Col>
+            </Row>
+          </div>
+          <Nav navbar>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="https://twitter.com/CreativeTim"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Follow us on Twitter"
+              >
+                <i className="fab fa-twitter" />
+                <p className="d-lg-none d-xl-none">Twitter</p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="https://www.facebook.com/CreativeTim"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Like us on Facebook"
+              >
+                <i className="fab fa-facebook-square" />
+                <p className="d-lg-none d-xl-none">Facebook</p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="https://www.instagram.com/CreativeTimOfficial"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Follow us on Instagram"
+              >
+                <i className="fab fa-instagram" />
+                <p className="d-lg-none d-xl-none">Instagram</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="nav-link d-none d-lg-block"
+                color="primary"
+                target="_blank"
+                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
+              >
+                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+              </Button>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/">
+                Back to Kit
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+                Have an issue?
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-//             <Nav.Item>
-//               <Nav.Link
-//                 href="https://soumyajitblogs.vercel.app/"
-//                 target="_blank"
-//                 rel="noreferrer"
-//               >
-//                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-//               </Nav.Link>
-//             </Nav.Item>
-
-//             <Nav.Item className="fork-btn">
-//               <Button
-//                 href="https://github.com/soumyajit4419/Portfolio"
-//                 target="_blank"
-//                 className="fork-btn-inner"
-//               >
-//                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-//                 <AiFillStar style={{ fontSize: "1.1em" }} />
-//               </Button>
-//             </Nav.Item>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-// export default NavBar1 ;
+export default NavBar1;

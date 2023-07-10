@@ -20,7 +20,13 @@ import ABOUT from "./pics_website/ABOUT.jpg" ;
 import HERO from "./pics_website/HERO.jpg" ;
 import PURPOSE from "./pics_website/PURPOSE.jpg" ;  
 import arrowUp from "./arrow-up.svg" ; 
+import test1 from "./pics_website/test1.png" ; 
+import test2 from "./pics_website/test2.png" ;
+import test3 from "./pics_website/test3.png"; 
 export {
+  test1 , 
+  test2 , 
+  test3 , 
   arrowUp , 
   ABOUT , 
   HERO , 

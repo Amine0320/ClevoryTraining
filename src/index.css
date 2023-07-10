@@ -175,3 +175,25 @@
 .router {
 overflow-x: hidden;
 } 
+/* css for 3images in hero  */
+.hero1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.test1{
+  width: 300px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.test2{
+  width: 300px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+
+}
+.test3{
+  width: 300px;
+  border-radius: 30px;
+  margin-left: 18%;
+}

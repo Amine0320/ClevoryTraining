@@ -2,8 +2,10 @@ import { useState } from "react";
 import { close, menu , LOGO1  } from "../assets";
 import { navLinks } from "../constants";
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 // import { NavDropdown } from "react-bootstrap";
 import styles from '../style' ;  
+import Tree from "../tree"; 
 // const Navbar = () => {
 //   const [active, setActive] = useState("Home");
 //   const [toggle, setToggle] = useState(false);
@@ -83,8 +85,9 @@ const Navbar = () => {
         navbarFixed ? "navbar-fixed" : ""
       }`}
     >
-      <img src={LOGO1} alt="clevoryTraining" className="w-[124px] h-[32px]" />
-
+    <Link to={Tree}>
+    <img src={LOGO1} alt="clevoryTraining" className="w-[124px] h-[32px]" />
+    </Link> 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li

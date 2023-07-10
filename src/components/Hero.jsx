@@ -1,6 +1,7 @@
 import styles from "../style";
-import {  HERO  } from "../assets";
+import {  HERO, test1 , test2 , test3  } from "../assets";
 import GetStarted from "./GetStarted";
+import '../index.css' ; 
 // First SECTION AFTER NAVBAR HERE !
 const Hero = () => {
   return (
@@ -31,7 +32,11 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={HERO}  alt="billing" className="w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" />
+      <div className="hero1">
+        <img src={test1}  alt="billing" className="test1" />
+        <img src={test3}  alt="billing"  className="test2" />
+        <img src={test2}  alt="billing"  className="test3" />
+      </div>
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
