@@ -3,8 +3,7 @@ import './Auth.css';
 
 const ForgotPasswordPage = () => {
   const handleSubmit = (event) => {
-    event.preventDefault();
-    // Submission and password recovery here ! 
+    event.preventDefault(); 
   };
 
   return (
