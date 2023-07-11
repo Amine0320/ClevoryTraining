@@ -29,12 +29,12 @@ const Clients = () => (
         </div>
       ))}
     </div>
-    <button onClick={() => scrollImages(-300)}>
+    {/* <button onClick={() => scrollImages(-300)}>
   <FaAngleLeft />
 </button>
 <button onClick={() => scrollImages(300)}>
-  <FaAngleRight />
-</button> 
+  <FaAngleRight /> 
+</button>  */}
   </section> 
   </div>
   </div> 

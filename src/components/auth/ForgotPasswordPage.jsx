@@ -11,10 +11,10 @@ const ForgotPasswordPage = () => {
     <div className="container" id="container">
       <div className="form-container forget-container">
         <form onSubmit={handleSubmit}>
-          <h1>Find your account</h1>
-          <p>Please enter your email to search for your account</p>
+          <h1>Trouvez votre compte</h1>
+          <p>Veuillez entrer votre e-mail pour rechercher votre compte</p>
           <input type="email" placeholder="Email" name="email" />
-          <button type="submit" value="submit">Submit</button>
+          <button type="submit" value="submit">Soumettre</button>
         </form>
       </div>
     </div>

@@ -142,7 +142,8 @@
 }
 .img-luxurious {
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+  height: 450px;
 }
 
 .img-luxurious:hover {
@@ -177,14 +178,14 @@
 /* Css for The Title of Partenaires and Clients Here */
 .Titre {
   transform: translate(35%, -50%) ; 
-  color: #11101d  ;
+  color: #727373  ;
   margin-right: 550px;
 
 }
 .Titre1 { 
   transform: translate(25%, -50%) ;  
-  color: #11101d  ;
-  margin-right: 250px;
+  color: #727373  ;
+  margin-right: 450px;
 } 
 /* css for the app.jsx  */ 
 .router {
@@ -204,10 +205,30 @@ overflow-x: hidden;
 .test2{
   width: 300px;
   border-radius: 30px; 
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  /* margin-left: 100px;  */
 }
 .test3{
   width: 300px;
   border-radius: 30px;
   margin-left: 18%;
+  margin-left: 315px;
+}
+/* stats new css  */
+.stat-val { 
+  color: #1CA9B1 ;
+} 
+.stat-title {
+  color: #727373 ;
+}
+/* CSS FOR ALL TITLES  */ 
+.H1 {
+  color: #727373 ; 
+} 
+.H2 {
+  color:#1CA9B1  ;
+}
+/* CTA NEW CSS  */ 
+.box {
+  color:#727373 ;
 }

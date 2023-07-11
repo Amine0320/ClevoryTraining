@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "container": "^0.0.2",
     "grid": "^4.10.8",
     "navdropdown": "^1.0.0",

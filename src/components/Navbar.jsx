@@ -78,33 +78,30 @@ const Navbar = () => {
   }, []);
 
   return ( 
-    <div className="bg-primary w-full overflow-hidden nav">
+    <div className="bg-primary w-full overflow-hidden nav ">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}> 
     <nav
       className={`w-full flex py-6 justify-between items-center navbar ${
         navbarFixed ? "navbar-fixed" : ""
       }`}
-    > 
+    >  
+    <a href="/">
     <img src={LOGO1} alt="clevoryTraining" className="w-[124px] h-[32px] logo-nav" />  
+    </a>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-[16px]${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`${nav.link}`}>{nav.title}</a> 
+            <a href={`${nav.link}`} className="H2">{nav.title}</a> 
           </li> 
         ))}
       </ul> 
-      {/* <ul>
-        <li>
-          <a href="">Login</a>
-        </li>
-      </ul> */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu}
