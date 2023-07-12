@@ -18,8 +18,8 @@ module.exports.sendConfirmationMailer = (email, token) => {
     from: process.env.SOURCE_MAIL,
     to: email,
     subject: 'Confirmation account',
-    text: `To confir your account, click on the following link: ${link1}`,
-  };
+    text: `To confirm your account, click on the following link: ${link1}`,
+  }; 
 
   return transport
     .sendMail(mailOptions)

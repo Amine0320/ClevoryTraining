@@ -6,7 +6,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/clevory')
         console.log('connected')
     }
   ).catch(
-    (err)=>{
+    (err)=>{ 
         console.log(err)
     }
   )

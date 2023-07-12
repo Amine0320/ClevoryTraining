@@ -144,7 +144,7 @@ router.put('/resetpassword/:activationcode',async(req,res)=>{
 })
 router.post('/logout',async(req,res)=>{
 
-    res.clearCookie("toksen")
+    res.clearCookie("token") 
    res.send("logout worked")
     
 })

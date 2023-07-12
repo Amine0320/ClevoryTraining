@@ -39,18 +39,21 @@ const AuthPage = () => {
   }
   const handleSignIn =async(e) =>{
     e.preventDefault()
-    if (!user) {
+    console.log(email)
+    
+    console.log(pass)   
+    // if (!user) {
       await axios
         .post('http://localhost:3000/client/signin', { password: pass, email })
         .then((data) => console.log(data))
         .catch((error) => console.log(error));
-    } else {
-      await axios
-        .post('http://localhost:3000/client/signin', { password: pass,  name: user })
-        .then((data) => console.log(data))
-        .catch((error) => console.log(error));
+    // } else {
+      // await axios
+      //   .post('http://localhost:3000/client/signin', { password: pass,  name: user })
+      //   .then((data) => console.log(data))
+      //   .catch((error) => console.log(error));
     
-     }; 
+    //  }; 
   } 
 
 
