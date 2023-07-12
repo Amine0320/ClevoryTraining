@@ -1,4 +1,4 @@
-import { PURPOSE } from "../assets";
+import { PURPOSE } from "../assets/pics"; 
 import { features } from "../constants";
 import styles, { layout } from "../style";
 // CE QUE NOUS OFFRONS SECTION HERE ! 
@@ -26,14 +26,10 @@ const Purpose = () =>  (
       <h2 className={`${styles.heading2} mb-10 H1 `}> 
       Ce Que Nous Offrons <br className="sm:block hidden" />
       </h2>
-      <img src={PURPOSE} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" />
-      {/* <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      </p> */} 
-      {/* <Button styles={`mt-10`} /> */}
+      <img src={PURPOSE} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
     </div>  
     <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, index) => (
-        // <FeatureCard key={feature.id} {...feature} index={index} /> 
+      {features.map((feature, index) => ( 
         <a key={feature.id} href={feature.link} className="H2 mb-0 w-[100%] h-[50%] ">
         <FeatureCard {...feature} index={index} /> 
       </a>  

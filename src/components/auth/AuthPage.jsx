@@ -30,7 +30,7 @@ const AuthPage = () => {
       signUpButton.removeEventListener('click', handleSignUpClick);
       signInButton.removeEventListener('click', handleSignInClick);
     };
-  }, []); // Empty dependency array to ensure the effect runs only once when the component mounts
+  }, []); 
   const handleSubmit =async(e) =>{
     e.preventDefault()
     await axios.post('http://localhost:3000/client/register', { name:user, password: pass,fullname:fulluser,email,phone})
@@ -40,20 +40,20 @@ const AuthPage = () => {
   const handleSignIn =async(e) =>{
     e.preventDefault()
     console.log(email)
-    
+
     console.log(pass)   
-    // if (!user) {
+    if (!user) {
       await axios
         .post('http://localhost:3000/client/signin', { password: pass, email })
         .then((data) => console.log(data))
         .catch((error) => console.log(error));
-    // } else {
-      // await axios
-      //   .post('http://localhost:3000/client/signin', { password: pass,  name: user })
-      //   .then((data) => console.log(data))
-      //   .catch((error) => console.log(error));
+    } else {
+      await axios
+        .post('http://localhost:3000/client/signin', { password: pass,  name: user })
+        .then((data) => console.log(data))
+        .catch((error) => console.log(error));
     
-    //  }; 
+     }; 
   } 
 
 

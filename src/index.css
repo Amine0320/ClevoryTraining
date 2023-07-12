@@ -144,7 +144,10 @@
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
   height: 450px;
-}
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  transform: translateX(-10px); 
+} 
 
 .img-luxurious:hover {
   transform: scale(1.05);
@@ -195,6 +198,8 @@ overflow-x: hidden;
 .hero1 {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 .test1{
   width: 300px;
@@ -231,4 +236,28 @@ overflow-x: hidden;
 /* CTA NEW CSS  */ 
 .box {
   color:#727373 ;
+}
+/* CSS TO MAKE THE PARGRAPHS MOVE  */
+.animated-paragraph {
+  opacity: 0;
+  animation: moveWordByWord 1s forwards;
+}
+
+@keyframes moveWordByWord {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* CSS FOR THE FOOTER  */ 
+.social { 
+  /* background-color: red;  */
+  width: 150px; 
+  color: #1CA9B1; 
+  display: flex;
+  background-color: red;
 }

@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin ,  send, shield, star , youtube } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin ,  send, shield, star , youtube } from "../assets/pics"; 
 import {ACTIA , ADACTIM , ATB , BEE ,CAREFFOUR , CERT , CNI , ESPRIT , FUBA , GEANT , OOREDOO , TOPNET , TT , WEVIOO , MIN , ATTIJARI } from "../assets/CLIENTS" ;   
 import { CCC1 , CLP2 , IT , LEARNING , Pearson, VATC , VMAEC  } from "../assets/Partenaires"; 
 // NAVBAR SECTION
