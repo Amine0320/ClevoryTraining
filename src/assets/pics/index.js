@@ -23,7 +23,9 @@ import arrowUp from "./arrow-up.svg" ;
 import test1 from "../pics_website/test1.png" ; 
 import test2 from "../pics_website/test2.png" ;
 import test3 from "../pics_website/test3.png"; 
+import HERO1 from "./HERO1.png" ; 
 export {
+  HERO1 , 
   test1 , 
   test2 , 
   test3 , 

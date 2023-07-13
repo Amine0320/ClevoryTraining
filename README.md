@@ -5,7 +5,8 @@ TO RUN THIS PROJECT YOU NEED TO
 4. npm install node -g --save 
 5. npm install react-slick 
 6. npm install react-icons 
-7. npm run dev : To Run The Application    
+7. npm run dev : To Run The Application 
+8. npm install google-maps-react    
 TO RUN THE BACKEND YOU NEED TO 
 1. npm install @babel/preset-react @babel/plugin-transform-runtime --save-dev 
 2. npm i express 
@@ -13,4 +14,4 @@ TO RUN THE BACKEND YOU NEED TO
 4. npm i axios 
 5. npm i cors 
 6. npm i helmet 
- 
+

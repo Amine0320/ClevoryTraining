@@ -1,4 +1,4 @@
-import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage ,    } from "./components";
+import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage  } from "./components";
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./tree";
@@ -23,7 +23,7 @@ const App = () => (
           <Route path='/forget' element={<ForgotPasswordPage/>}/>  
           <Route path='/Auth' element={<AuthPage/>}/>  
           <Route path="/client/confirm/:activationcode" element={<Page />} />
-          <Route path="/reset" element={<Reset  />} /> 
+          <Route path="/reset" element={<Reset/>} /> 
         </Routes> 
     </Router> 
     <Footer/> 

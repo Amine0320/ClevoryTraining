@@ -10,12 +10,12 @@ const partenaires= () => (
     <h2 className={`${styles.heading2} Titre `}>
       Nos Partenaires <br className="sm:block hidden" /> 
       </h2> 
-      {parts.map((parts) => (
-        <div key={parts.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-5`}>
+      {parts.map((parts) => ( 
+        <div key={parts.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-1`}>
           <img src={parts.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain img" />
-        </div>
-      ))}
-    </div>
+        </div> 
+      ))} 
+    </div> 
   </section>  
   </div>
   </div>

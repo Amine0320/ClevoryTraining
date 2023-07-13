@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import axios from 'axios';
-// 
-
-const Page = () => {
-    
+import axios from 'axios'; 
+const Page = () => {  
   useEffect(() => {
 
     const url = window.location.href;
@@ -24,11 +20,7 @@ const Page = () => {
           console.error(error);
         });
     }
-  }, []);
-  // const {param} = useParams()
-  // console.log(param)
-
-
+  }, []); 
   return (
 
     <div>

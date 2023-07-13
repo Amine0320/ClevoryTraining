@@ -11,7 +11,9 @@ import Footer from "./Footer";
 import Hero from "./Hero" ; 
 import AuthPage from "./auth/AuthPage" ; 
 import ForgotPasswordPage from "./auth/ForgotPasswordPage";
+import Map from './Map' ; 
 export { 
+  Map , 
   ForgotPasswordPage , 
   AuthPage , 
   Navbar , 

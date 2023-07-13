@@ -6,11 +6,11 @@ const AboutUs = () => (
       <div className={`${styles.boxWidth}`}>
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <img src={ABOUT} alt="AboutUs" className="w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
+      <img src={ABOUT} alt="AboutUs" className=" mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious"  /> 
     </div> 
 
     <div className={layout.sectionInfo}>
-      <h2 className={` H1 ${styles.heading2}`}> 
+      <h2 className={`AboutT ${styles.heading2}`}> 
       A propos de nous<br className="sm:block hidden" />
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5 animated-paragraph `}>

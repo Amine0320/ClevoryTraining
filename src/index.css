@@ -6,7 +6,7 @@
 
 :root {
   --black-gradient: linear-gradient(
-    144.39deg,
+    144.39deg, 
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
@@ -61,7 +61,7 @@
     -168.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    #dde0e0  91.61%
   );
 }
 
@@ -143,9 +143,10 @@
 .img-luxurious {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
-  height: 450px;
+  height: 100%;
+  width: 650px; 
   display: block;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto; 
   transform: translateX(-10px); 
 } 
 
@@ -173,7 +174,7 @@
 /* Css for partenaires and clients logo to delete the white background and adjust them  */ 
 .img {
   width: 15%; 
-  aspect-ratio: 4/3; 
+  aspect-ratio: 4/3;  
   object-fit: contain; 
   mix-blend-mode: color-burn; 
 
@@ -183,13 +184,27 @@
   transform: translate(35%, -50%) ; 
   color: #727373  ;
   margin-right: 550px;
+  margin-top: 80px;
 
 }
 .Titre1 { 
   transform: translate(25%, -50%) ;  
   color: #727373  ;
   margin-right: 450px;
+  margin-top: 80px;
+ 
 } 
+@media screen and (min-width: 768px) { 
+  .Titre1 {
+    font-size: 36px; 
+  }
+}
+@media screen and (min-width: 1024px) { 
+  .Titre1  {
+    font-size: 48px; 
+  } 
+} 
+
 /* css for the app.jsx  */ 
 .router {
 overflow-x: hidden;
@@ -200,25 +215,7 @@ overflow-x: hidden;
   flex-wrap: wrap;
   margin-top: 120px;
   margin-bottom: 100px;
-}
-.test1{
-  width: 300px;
-  border-radius: 30px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-.test2{
-  width: 300px;
-  border-radius: 30px; 
-  margin-bottom: 10px;
-  /* margin-left: 100px;  */
-}
-.test3{
-  width: 300px;
-  border-radius: 30px;
-  margin-left: 18%;
-  margin-left: 315px;
-}
+}  
 /* stats new css  */
 .stat-val { 
   color: #1CA9B1 ;
@@ -228,15 +225,36 @@ overflow-x: hidden;
 }
 /* CSS FOR ALL TITLES  */ 
 .H1 {
-  color: #727373 ; 
+  color: #727373 ;  
+  padding-top: 100px; 
+}   
+.Learning  {
+  color: #727373 ;  
+  padding-top: 200px; 
+} 
+.Leading {
+  color: #727373 ;  
+}
+.PurposeT {
+  color: #727373 ;   
+}
+.AboutT {
+  color: #727373 ;   
+  padding-right: 280px;
 } 
 .H2 {
-  color:#1CA9B1  ;
+  color:#1CA9B1  ; 
+}  
+.H3 {
+  color:#1CA9B1  ; 
+  padding-right: 350px;
 }
+
 /* CTA NEW CSS  */ 
-.box {
+/* .box {
   color:#727373 ;
-}
+  background-color: #727373; 
+} */
 /* CSS TO MAKE THE PARGRAPHS MOVE  */
 .animated-paragraph {
   opacity: 0;
@@ -255,9 +273,27 @@ overflow-x: hidden;
 }
 /* CSS FOR THE FOOTER  */ 
 .social { 
-  /* background-color: red;  */
-  width: 150px; 
-  color: #1CA9B1; 
+  width: 200px; 
+  /* color: #1CA9B1;  */
   display: flex;
+  color: black;
   background-color: red;
+} 
+.img-social {
+  color: #33bbcf;
 }
+/* CSS FOR HERO SECTION  */
+.HERO1 {
+  background-image: url("./assets/pics/HERO1.png"); 
+  display: flex;
+  background-size: cover; 
+  background-position: center center;
+  height: 800px; 
+}
+/* css for card  */ 
+.card {
+  display: flex ; 
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 80px; 
+}  
