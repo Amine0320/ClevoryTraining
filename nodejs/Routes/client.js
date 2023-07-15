@@ -142,6 +142,29 @@ router.put('/resetpassword/:activationcode',async(req,res)=>{
     
     )
 })
+router.get('/data/:nameobject',(req,res)=>{
+    const tok = req.cookies.token;
+    nameobjecct = req.params.nameobject
+    
+    User.findOne({token:tok})
+    .then((user)=>{
+        if(user){
+            console.log(user)
+        Data.findOne({name:nameobjecct})
+            .then((usr)=>
+                 {
+                res.send(usr)
+                  }
+            )
+        }
+        else{
+            res.send("feyek bik")
+        }
+    }).catch((err)=>{
+        res.send(err)
+    })
+}) 
+
 router.post('/logout',async(req,res)=>{
 
     res.clearCookie("token") 

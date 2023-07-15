@@ -39,7 +39,8 @@ const AuthPage = () => {
   }
   const handleSignIn =async(e) =>{
     e.preventDefault()
-    console.log(email)
+    console.log(user)
+    console.log(email) 
 
     console.log(pass)   
     if (!user) {
