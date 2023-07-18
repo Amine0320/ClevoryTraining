@@ -3,7 +3,7 @@ import { LOGO1  } from "../assets/pics";
 import { socialMedia } from "../constants";
 import '../index.css' ;  
 const Footer = () => (
-  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} footer `}>
+  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} footer`}>
   <div className={`${styles.boxWidth}`}>
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>

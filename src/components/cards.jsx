@@ -1,9 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { LOGO1 } from '../assets/pics';
-
-// use it in the course section ! 
-// card by react bootstrap ! 
+import { LOGO1 } from '../assets/pics'; 
 function Card1() {
   return (
     <Card style={{ width: '18rem' }}>

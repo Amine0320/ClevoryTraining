@@ -12,8 +12,7 @@ function Navbar() {
     if (active === "nav__menu") {
       setActive("nav__menu nav__active");
     } else setActive("nav__menu");
-
-    // Icon Toggler
+    
     if (icon === "nav__toggler") {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");

@@ -6,12 +6,12 @@ export const navLinks = [
   {
     id: "Clevory Training",
     title: "Clevory Training",
-    link:"", 
+    link:"tree", 
   },
   {
     id: "Nos Formations",
     title: "Nos Formations",
-    link:"",
+    link:"NF",
   },
   {
     id: "Nos solutions",
@@ -28,11 +28,16 @@ export const navLinks = [
     title: "Ressources",
     link:"",
   },
+  // {
+  //   id: "News",
+  //   title: "News",
+  //   link:"", 
+  // }, 
   {
-    id: "News",
-    title: "News",
-    link:"", 
-  },
+    id: "Contact",
+    title: "Contact",
+    link : "Contact" , 
+  }, 
   {
     id: "Login",
     title: "Login",

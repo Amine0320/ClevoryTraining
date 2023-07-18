@@ -15,9 +15,11 @@ import Map from './Map' ;
 import ScrollToTop from "./ScrollToTop";
 import NF from "./Pupose_Pages/NF"; 
 import LS from "./Pupose_Pages/LS"; 
-import ACC from "./Pupose_Pages/ACC";
+import ACC from "./Pupose_Pages/ACC"; 
+import Contact from "./Contact/Contact";
 // import Card1 from "./cards";
 export { 
+  Contact , 
   ACC , 
   NF , 
   LS , 

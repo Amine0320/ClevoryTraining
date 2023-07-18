@@ -1,4 +1,4 @@
-import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage, ScrollToTop  } from "./components";
+import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage, ScrollToTop, Contact  } from "./components";
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./Tree"; 
@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/ACC" element={<ACC/>} />  
           <Route path="/LS" element={<LS/>} /> 
           <Route path="/NF" element={<NF/>} /> 
+          <Route path='/Contact' element={<Contact/>}/>    
         </Routes> 
     </Router> 
     <Footer/> 

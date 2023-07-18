@@ -1,4 +1,4 @@
-import { PURPOSE } from "../../assets/pics";
+import { ACC1, PURPOSE } from "../../assets/pics";
 import { features } from "../../constants";
 import styles , {layout} from "../../style"; 
 import '../../index.css' ;  
@@ -17,15 +17,16 @@ const FeatureCard = ({ icon, title, content, index }) => (
     </div>
   </div>  
 ); 
+// ACC STANDS FOR ACCOMPAGNEMENTS 
 const ACC = () => (
     <div className={`bg-primary`}> 
     <div className={`${styles.boxWidth}`}> 
 <section id="features" className={layout.section} >
   <div className={layout.sectionInfo}>
     <h2 className={`${styles.heading2} mb-10 PurposeT `}> 
-    Ce Que Nous Offrons <br className="sm:block hidden" />
-    </h2>
-    <img src={PURPOSE} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
+    Accompagnement  <br className="sm:block hidden" />
+    </h2> 
+    <img src={ACC1} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
   </div>  
   <div className={` flex-col container-card`}>
     <div className="card">

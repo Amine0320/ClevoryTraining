@@ -23,7 +23,13 @@ import test1 from "../pics_website/test1.png" ;
 import test2 from "../pics_website/test2.png" ;
 import test3 from "../pics_website/test3.png"; 
 import HERO1 from "./HERO1.png" ; 
+import NF1 from "../pics_website/NF1.jpg" ;  
+import LS1 from "../pics_website/LS1.jpg" ;  
+import ACC1 from "../pics_website/ACC1.jpg" ;  
 export {
+  NF1 , 
+  ACC1 , 
+  LS1 , 
   HERO1 , 
   test1 , 
   test2 , 

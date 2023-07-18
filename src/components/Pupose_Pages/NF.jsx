@@ -1,4 +1,4 @@
-import { PURPOSE } from "../../assets/pics";
+import { NF1, PURPOSE } from "../../assets/pics";
 import { features } from "../../constants";
 import styles , {layout} from "../../style"; 
 import '../../index.css' ; 
@@ -13,19 +13,20 @@ const FeatureCard = ({ icon, title, content, index }) => (
       </h4>
       <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[20px]"> 
         {content} 
-      </p>
+      </p> 
     </div>
   </div>  
 ); 
+// NF STANDS FOR NOS FORMATIONS 
 const NF = () => (
     <div className={`bg-primary`}> 
     <div className={`${styles.boxWidth}`}> 
 <section id="features" className={layout.section} >
   <div className={layout.sectionInfo}>
     <h2 className={`${styles.heading2} mb-10 PurposeT `}> 
-    Ce Que Nous Offrons <br className="sm:block hidden" />
+     Nos formations <br className="sm:block hidden" />
     </h2>
-    <img src={PURPOSE} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
+    <img src={NF1} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
   </div>  
   <div className={` flex-col container-card`}>
     <div className="card">
