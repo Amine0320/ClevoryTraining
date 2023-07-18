@@ -1,16 +1,20 @@
-import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage  } from "./components";
+import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage, ScrollToTop  } from "./components";
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
-import Tree from "./tree";
+import Tree from "./Tree"; 
 import './index.css' ; 
 import 'react-bootstrap'; 
 import Page from "./Page"; 
 import Reset from "./Reset";
+import ACC from "./components/Pupose_Pages/ACC";
+import LS from "./components/Pupose_Pages/LS";
+import NF from "./components/Pupose_Pages/NF";
 const App = () => ( 
 <div className="router"> 
 <Router> 
  {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
       <Navbar /> 
+      <ScrollToTop />  
         <Routes>  
           <Route path='/' element={<Tree/>}/>   
           <Route path='/Hero' element={<Hero/>}/>  
@@ -24,9 +28,12 @@ const App = () => (
           <Route path='/Auth' element={<AuthPage/>}/>  
           <Route path="/client/confirm/:activationcode" element={<Page />} />
           <Route path="/reset" element={<Reset/>} /> 
+          <Route path="/ACC" element={<ACC/>} />  
+          <Route path="/LS" element={<LS/>} /> 
+          <Route path="/NF" element={<NF/>} /> 
         </Routes> 
     </Router> 
     <Footer/> 
-</div> 
+</div>  
 ); 
 export default App;

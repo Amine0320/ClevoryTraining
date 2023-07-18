@@ -16,7 +16,7 @@
 
 * {
   scroll-behavior: smooth;
-}
+} 
 
 .text-gradient {
   background: radial-gradient(
@@ -194,6 +194,12 @@
   margin-top: 80px;
  
 } 
+.Titre2 {
+  transform: translate(35%, -50%) ; 
+  color: #727373  ;
+  display: flex; 
+  align-items: center; 
+}
 @media screen and (min-width: 768px) { 
   .Titre1 {
     font-size: 36px; 
@@ -277,11 +283,14 @@ overflow-x: hidden;
   /* color: #1CA9B1;  */
   display: flex;
   color: black;
-  background-color: red;
 } 
 .img-social {
   color: #33bbcf;
 }
+.footer {
+  background-color: whitesmoke; 
+  border-radius: 100px;
+} 
 /* CSS FOR HERO SECTION  */
 .HERO1 {
   background-image: url("./assets/pics/HERO1.png"); 

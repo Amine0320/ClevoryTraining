@@ -12,7 +12,17 @@ import Hero from "./Hero" ;
 import AuthPage from "./auth/AuthPage" ; 
 import ForgotPasswordPage from "./auth/ForgotPasswordPage";
 import Map from './Map' ; 
+import ScrollToTop from "./ScrollToTop";
+import NF from "./Pupose_Pages/NF"; 
+import LS from "./Pupose_Pages/LS"; 
+import ACC from "./Pupose_Pages/ACC";
+// import Card1 from "./cards";
 export { 
+  ACC , 
+  NF , 
+  LS , 
+  // Card1 , 
+  ScrollToTop , 
   Map , 
   ForgotPasswordPage , 
   AuthPage , 

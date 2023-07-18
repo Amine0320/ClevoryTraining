@@ -6,7 +6,7 @@ export const navLinks = [
   {
     id: "Clevory Training",
     title: "Clevory Training",
-    link:"Hero", 
+    link:"", 
   },
   {
     id: "Nos Formations",
@@ -47,7 +47,7 @@ export const features = [
     title: "Nos Formations",
     content:
       "Découvrez nos offres de formations IT, Telco, Gestion de Projet et ITSM",
-    link:"https://www.instagram.com/clevorytraining/?hl=fr" , 
+    link:"/NF" , 
   },
   {
     id: "feature-2",
@@ -55,7 +55,7 @@ export const features = [
     title: "Accompagnement",
     content:
       "Au-delà de la formation, nou proposons à nos client du support sur mesure.",
-      link:"https://www.instagram.com/clevorytraining/?hl=fr" , 
+      link:"/ACC" , 
   },
   {
     id: "feature-3",
@@ -63,7 +63,7 @@ export const features = [
     title: "Location de salles",
     content:
       "Location des salles de formation et réunion avec toutes les commoditées.",
-      link:"https://www.instagram.com/clevorytraining/?hl=fr" , 
+      link:"/LS" , 
   },
 ]; 
 // TESTIMONIALS SECTION 
@@ -170,6 +170,46 @@ export const clients = [
     id: "client-7",
     logo: ATTIJARI,
   },
+  {
+    id: "client-8",
+    logo: CAREFFOUR,
+  },
+  {
+    id: "client-9",
+    logo: CERT,
+  },
+  {
+    id: "client-10",
+    logo: CNI,
+  },
+  {
+    id: "client-11",
+    logo: ESPRIT,
+  },
+  {
+    id: "client-12",
+    logo: FUBA,
+  },
+  {
+    id: "client-13",
+    logo: GEANT,
+  },
+  {
+    id: "client-14",
+    logo: TOPNET,
+  },
+  {
+    id: "client-15",
+    logo: TT,
+  },
+  {
+    id: "client-16",
+    logo: WEVIOO,
+  },
+  {
+    id: "client-17",
+    logo: MIN,
+  },
 ];
 // Partenaires Section 
 export const parts  = [
@@ -202,3 +242,21 @@ export const parts  = [
     logo: VMAEC,   
   },
 ]; 
+// resonsive dictionnary 
+export const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 4  
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 3,
+    slidesToSlide: 3
+  },
+  mobile: {
+    breakpoint: { max: 768, min: 0 },
+    items: 2,
+    slidesToSlide: 2
+  } 
+};

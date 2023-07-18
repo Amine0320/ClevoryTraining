@@ -1,7 +1,11 @@
 import React from 'react'; 
+import styles from '../style'; 
 const Map = () => {  
   return (
     <div>
+     <h2 className={`${styles.heading2} Titre2 `}>
+       Map <br className="sm:block hidden" /> 
+      </h2> 
       <div style={{ height: '400px', width: '100%' , marginTop: '100px' , marginBottom: '100px' , borderRadius:'200px' }}> 
         <iframe
           title="Clevory Training Map"
@@ -12,7 +16,7 @@ const Map = () => {
           allowFullScreen
         ></iframe> 
       </div>
-    </div>
+    </div> 
   );
 }; 
 export default Map;
