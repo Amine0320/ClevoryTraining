@@ -1,14 +1,13 @@
-import { ABOUT } from "../../assets/pics";
 import styles, { layout } from "../../style";
 import React, { useState } from "react";
 import "./Contact.css";
 import axios from "axios";
-
+import { Container, Row, Col } from "react-bootstrap"; 
 const Contact = () => {
   const map = "https://maps.google.com/maps?q=Clevory+Training,+Charguia+1&z=15&output=embed";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState(""); 
   const [message, setMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState(false);
 
@@ -32,11 +31,11 @@ const Contact = () => {
       .catch((err) => {
         console.log("Erreur :", err);
       });
-  };
-
+  }; 
   return (
     <>
-      <div className={`bg-primary`}>
+     <Container className="contact-cont">
+     <div className={`bg-primary`}>
         <div className={`${styles.boxWidth}`}>
           <div className={layout.sectionInfo}>
             <section className="contacts padding">
@@ -60,12 +59,10 @@ const Contact = () => {
                     <div className="box">
                       <h4>TÉLÉPHONE:</h4>
                       <p>+216 31 404 377</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="container-card">
-              <div className="card">
+                    </div> 
+                  {/*  */}
+                  <div className="container-card">
+              <div className="card1">
                 <form onSubmit={handleSubmit}>
                   <div className="flexSB">
                     <input
@@ -102,18 +99,21 @@ const Contact = () => {
                     ENVOYER MESSAGE
                   </button>
                 </form>
-              </div>
+                </div>
+                </div>
+            </div>
+            </div>
             </div>
             </section> 
           </div>
         </div>
-      </div>
-      {/* Popup message */}
+      </div> 
       {successMessage && (
         <div className="popup">
           <p>Message envoyé avec succès!</p>
         </div>
       )}
+     </Container>
     </>
   );
 };

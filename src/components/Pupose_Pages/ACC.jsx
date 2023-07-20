@@ -1,12 +1,9 @@
-import { ACC1, PURPOSE } from "../../assets/pics";
-import { features } from "../../constants";
+import {ACC1} from "../../assets/pics";
+import {ACCC} from "../../constants";
 import styles , {layout} from "../../style"; 
 import '../../index.css' ;  
-const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-3" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
-    </div>
+const AccCard = ({  title, content, index }) => (
+  <div className={`flex flex-row p-6 rounded-[20px] ${index !== ACCC.length - 1 ? "mb-3" : "mb-0"} feature-card`}>  
     <div className="flex-1 flex flex-col ml-3 ">
       <h4 className="font-poppins font-semibold text-[18px] leading-[23.4px] mb-1">
         {title}
@@ -16,29 +13,29 @@ const FeatureCard = ({ icon, title, content, index }) => (
       </p>
     </div>
   </div>  
-); 
+);  
 // ACC STANDS FOR ACCOMPAGNEMENTS 
-const ACC = () => (
-    <div className={`bg-primary`}> 
+const ACC = () => ( 
+<div className={`bg-primary`}> 
     <div className={`${styles.boxWidth}`}> 
 <section id="features" className={layout.section} >
   <div className={layout.sectionInfo}>
-    <h2 className={`${styles.heading2} mb-10 PurposeT `}> 
+    <h2 className={`${styles.heading2} mb-10 mt-20  PurposeT `}>  
     Accompagnement  <br className="sm:block hidden" />
     </h2> 
-    <img src={ACC1} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
+    <img src={ACC1} alt="ACC" className="mt-10  w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
   </div>  
-  <div className={` flex-col container-card`}>
-    <div className="card">
-    {features.map((feature, index) => ( 
-      <a key={feature.id} href={feature.link} className="H2 mb-0 w-[100%] h-[50%]">
-      <FeatureCard {...feature} index={index} />  
+  <div className={`flex-col container-card`}>
+    <div className="card1"> 
+    {ACCC.map((feature, index) => ( 
+      <a key={feature.id} className="H2 mb-0 w-[100%] h-[50%]">
+      <AccCard {...feature} index={index} />  
     </a>   
     ))} 
+  </div>   
   </div> 
-  </div>
 </section>
 </div>
-</div>
+</div> 
 );
 export default ACC;  

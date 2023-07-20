@@ -265,3 +265,18 @@ export const responsive = {
     slidesToSlide: 2
   } 
 };
+// Purpose Page Dictionary 
+export const ACCC = [
+{
+id : "ACCC-1" , 
+title : "Bienvenue au Centre de Formation Clevory Training !" , 
+content : "Notre centre de formation est votre porte d'entrée vers un avenir prometteur. Que vous soyez étudiant cherchant à acquérir de nouvelles compétences, professionnel désirant perfectionner votre savoir-faire, ou même simplement passionné cherchant à élargir vos horizons, nous avons le programme qui vous convient.\n\nChez Clevory Training, l'apprentissage va bien au-delà des cours et des leçons. Nous croyons en une approche pratique et interactive, mettant l'accent sur la résolution de problèmes réels et la mise en pratique des connaissances acquises. Nos formateurs expérimentés sont dévoués à vous accompagner à chaque étape de votre parcours d'apprentissage, vous aidant à atteindre vos objectifs professionnels et personnels.\n\nNous proposons une variété de formations, allant des technologies émergentes aux compétences en affaires, en passant par les arts et la créativité. Nos programmes sont conçus pour s'adapter à vos besoins uniques et à votre emploi du temps chargé. Vous pouvez choisir entre des formations intensives sur site." , 
+} , 
+ ]; 
+ export const LSS = [
+  {
+  id : "LSS-1" , 
+  title : "Bienvenue au Centre de Formation Clevory Training !" , 
+  content : "Notre entreprise propose des salles de location polyvalentes pour tous types d'événements. Que ce soit pour des réunions d'affaires, des séminaires, des formations, des fêtes, ou tout autre événement, nos salles sont équipées pour répondre à vos besoins. Nous disposons d'une gamme de salles adaptées à différentes capacités, allant des petites salles de réunion aux grandes salles de conférence.\n\nNos installations modernes sont conçues pour offrir confort et commodité à vos invités. Chaque salle est équipée d'un système audiovisuel performant, de mobilier confortable, et d'une connexion Internet haut débit. De plus, notre équipe professionnelle est disponible pour vous aider dans l'organisation de votre événement, de la mise en place technique à la restauration.\n\nQue vous soyez une entreprise, une association, ou un particulier, nous avons la salle idéale pour rendre votre événement mémorable. Contactez-nous dès aujourd'hui pour connaître nos disponibilités et réserver la salle parfaite pour votre prochain événement." , 
+  } , 
+   ];    

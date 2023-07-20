@@ -8,7 +8,7 @@ import Page from "./Page";
 import Reset from "./Reset";
 import ACC from "./components/Pupose_Pages/ACC";
 import LS from "./components/Pupose_Pages/LS";
-import NF from "./components/Pupose_Pages/NF";
+import NF from "./components/Pupose_Pages/NF"; 
 const App = () => ( 
 <div className="router"> 
 <Router> 
