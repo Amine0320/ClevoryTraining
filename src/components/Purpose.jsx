@@ -37,7 +37,7 @@ const Purpose = () =>  (
       ))} 
     </div> 
     </div>
-  </section>
+  </section> 
   </div>
   </div>
 );

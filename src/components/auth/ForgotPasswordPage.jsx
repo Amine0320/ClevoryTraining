@@ -1,11 +1,9 @@
 import React from 'react';
-import './Auth.css';
-
+import './Auth.css'; 
 const ForgotPasswordPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault(); 
   };
-
   return (
     <div className="container" id="container">
       <div className="form-container forget-container">
@@ -18,6 +16,5 @@ const ForgotPasswordPage = () => {
       </div>
     </div>
   );
-};
-
+}; 
 export default ForgotPasswordPage;

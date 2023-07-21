@@ -19,7 +19,7 @@ Avec une large offre dans le domaine des TIC, du management et des soft skills. 
       </p> 
     </div>
   </section> 
-  </div>
+  </div> 
   </div>
 );
 export default AboutUs ; 

@@ -16,7 +16,7 @@ export const navLinks = [
   {
     id: "Nos solutions",
     title: "Nos solutions",
-    link:"",
+    link:"NFU",
   },
   {
     id: "Calendrier",
@@ -27,12 +27,7 @@ export const navLinks = [
     id: "Ressources",
     title: "Ressources",
     link:"",
-  },
-  // {
-  //   id: "News",
-  //   title: "News",
-  //   link:"", 
-  // }, 
+  }, 
   {
     id: "Contact",
     title: "Contact",
@@ -280,3 +275,26 @@ content : "Notre centre de formation est votre porte d'entrée vers un avenir pr
   content : "Notre entreprise propose des salles de location polyvalentes pour tous types d'événements. Que ce soit pour des réunions d'affaires, des séminaires, des formations, des fêtes, ou tout autre événement, nos salles sont équipées pour répondre à vos besoins. Nous disposons d'une gamme de salles adaptées à différentes capacités, allant des petites salles de réunion aux grandes salles de conférence.\n\nNos installations modernes sont conçues pour offrir confort et commodité à vos invités. Chaque salle est équipée d'un système audiovisuel performant, de mobilier confortable, et d'une connexion Internet haut débit. De plus, notre équipe professionnelle est disponible pour vous aider dans l'organisation de votre événement, de la mise en place technique à la restauration.\n\nQue vous soyez une entreprise, une association, ou un particulier, nous avons la salle idéale pour rendre votre événement mémorable. Contactez-nous dès aujourd'hui pour connaître nos disponibilités et réserver la salle parfaite pour votre prochain événement." , 
   } , 
    ];    
+export const Card =  [
+  { 
+    id : "0" , 
+    img : "" , 
+    title : "bkakakakaa" , 
+    content : "b;alalala" , 
+    btn : "blalalalaal" ,  
+  } , 
+  { 
+    id : "1" , 
+    img : "" , 
+    title : "bkakakakaa" , 
+    content : "b;alalala" , 
+    btn : "blalalalaal" ,  
+  } , 
+  { 
+    id : "2" , 
+    img : "" , 
+    title : "bkakakakaa" , 
+    content : "b;alalala" , 
+    btn : "blalalalaal" ,  
+  } ,   
+] ; 

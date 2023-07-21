@@ -2,14 +2,16 @@
 display: flex; 
 height: auto; 
 flex-direction: column;
-height: auto ;
+height: auto ; 
+margin-bottom: 100px;
+width: 1000px;
 }    
-.contact {
+.contact { 
     display: flex;  
-    height: auto ;
-}
-.contacts iframe {
-    width: 100%; 
+    height: auto ; 
+}  
+.contacts iframe { 
+    width: 400px;
     height: 100%;
     border: none;
   }
@@ -40,8 +42,11 @@ height: auto ;
     border: 1px solid grey;
   }
   form .flexSB input:nth-child(1) {
-    margin-right: 10px;
+    margin-right: 10px ;   
   }
+  form .flexSB input  {
+    border-radius: 15px;
+  } 
   .contacts h3 {
     margin-top: 20px;
     font-weight: 500;
@@ -61,12 +66,10 @@ height: auto ;
     font-size: 16px;
     cursor: pointer;
     overflow-y: hidden;
-  }
-  
+  } 
   .contacts button.primary-btn2:hover {
     background-color: #0c7b70;
-  }
-  
+  } 
   @media screen and (max-width: 768px) {
     .contacts .container {
       flex-direction: column;

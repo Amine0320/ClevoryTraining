@@ -12,19 +12,24 @@ import Hero from "./Hero" ;
 import AuthPage from "./auth/AuthPage" ; 
 import ForgotPasswordPage from "./auth/ForgotPasswordPage";
 import Map from './Map' ; 
-import ScrollToTop from "./ScrollToTop";
+// import ScrollToTop from "./ScrollToTop";
 import NF from "./Pupose_Pages/NF"; 
 import LS from "./Pupose_Pages/LS"; 
 import ACC from "./Pupose_Pages/ACC"; 
 import Contact from "./Contact/Contact";
 // import Card1 from "./cards";
+import GoToTop from "./GoToTop";
+import NFU from "./NFU";
+import Card1 from "./cards";
 export { 
+  Card1 , 
+  NFU , 
+  GoToTop , 
   Contact , 
   ACC , 
   NF , 
-  LS , 
-  // Card1 , 
-  ScrollToTop , 
+  LS ,  
+  // ScrollToTop , 
   Map , 
   ForgotPasswordPage , 
   AuthPage , 

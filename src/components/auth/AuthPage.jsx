@@ -55,9 +55,7 @@ const AuthPage = () => {
         .catch((error) => console.log(error));
     
      }; 
-  } 
-
-
+  }  
   return (
     <div className="container" id="container">
     <div className="form-container sign-up-container">
@@ -97,11 +95,11 @@ const AuthPage = () => {
           <div className="overlay-panel overlay-right">
             <h1>Bonjour !</h1>
             <p>Vous n'avez pas de compte ? <br /> deviens l'un des nôtres !</p>
-            <button className="ghost" id="signUp">S'incrire</button>
+            <button className="ghost" id="signUp">S'inscrire</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 export default AuthPage;

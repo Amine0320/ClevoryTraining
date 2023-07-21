@@ -2,7 +2,7 @@ import styles, { layout } from "../../style";
 import React, { useState } from "react";
 import "./Contact.css";
 import axios from "axios";
-import { Container, Row, Col } from "react-bootstrap"; 
+import { Container} from "react-bootstrap";   
 const Contact = () => {
   const map = "https://maps.google.com/maps?q=Clevory+Training,+Charguia+1&z=15&output=embed";
   const [name, setName] = useState("");
@@ -33,7 +33,7 @@ const Contact = () => {
       });
   }; 
   return (
-    <>
+    <> 
      <Container className="contact-cont">
      <div className={`bg-primary`}>
         <div className={`${styles.boxWidth}`}>
@@ -43,7 +43,7 @@ const Contact = () => {
                 <div className="left row">
                   <iframe title="map" src={map}></iframe>
                 </div>
-                <div className="right row">
+                <div className="right row"> 
                   <h1>Contactez-nous</h1>
                   <p>Nous sommes ouverts à toute suggestion ou simplement pour discuter.</p>
 
@@ -60,7 +60,6 @@ const Contact = () => {
                       <h4>TÉLÉPHONE:</h4>
                       <p>+216 31 404 377</p>
                     </div> 
-                  {/*  */}
                   <div className="container-card">
               <div className="card1">
                 <form onSubmit={handleSubmit}>
@@ -78,8 +77,7 @@ const Contact = () => {
                       placeholder="Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
+                    /> 
                   <input
                     type="text"
                     name="subject"
@@ -98,6 +96,7 @@ const Contact = () => {
                   <button type="submit" className="primary-btn2">
                     ENVOYER MESSAGE
                   </button>
+                  </div> 
                 </form>
                 </div>
                 </div>
@@ -117,5 +116,4 @@ const Contact = () => {
     </>
   );
 };
-
 export default Contact;
