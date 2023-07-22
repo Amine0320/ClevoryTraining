@@ -10,6 +10,7 @@ import ACC from "./components/Pupose_Pages/ACC";
 import LS from "./components/Pupose_Pages/LS";
 import NF from "./components/Pupose_Pages/NF"; 
 import BasicSlider from "./components/BasicSlider";
+import Slider from "./components/Slider";
 const App = () => ( 
 <div className="router">  
 <Router> 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path='/Contact' element={<Contact/>}/>    
           <Route path='/NFU' element={<NFU/>}/>   
           <Route path='/BS' element={<BasicSlider/>}/>   
+          <Route path='/S' element={<Slider/>}/>  
         </Routes> 
     </Router> 
     <Footer/> 
