@@ -4,4 +4,4 @@ const Button = ({ styles }) => (
     Chercher une formation 
   </button>
 ); 
-export default Button;
+export default Button; 

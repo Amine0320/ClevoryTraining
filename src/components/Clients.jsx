@@ -1,8 +1,7 @@
 import { clients , responsive } from "../constants"; 
 import styles from "../style";
 import React from 'react';  
-import '../index.css' ;  
-// import Carousel from "react-multi-carousel";
+import '../index.css' ;   
 import "react-multi-carousel/lib/styles.css"; 
 
 export default function Clients() {

@@ -1,11 +1,15 @@
 import React from "react";
-import { PURPOSE } from '../../assets/pics';
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button"; 
+import { Container, Row, Col } from "react-bootstrap"; 
 import './NF.css' ; 
-import { Container, Card, Button } from "react-bootstrap"; 
-// NF CARD STANDS FOR NOS FORMATIONS CARD 
+import { CCC1, CLP2, IT, VMAEC } from "../../assets/Partenaires";
+import { Microsoft } from "../../assets/FU";
+import styles from "../../style";
+// NfCard STANDS FOR NOS FORMATIONS CARD 
 const NfCard = (props) => (
   <Card className="project-card-view">
-    <Card.Img variant="top" src={props.img} alt="card-img"/>
+    <Card.Img variant="top" src={props.img} alt="card-img" />
     <Card.Body>
       <Card.Title>{props.title}</Card.Title>
       <Card.Text style={{ textAlign: "justify" }}>
@@ -14,60 +18,72 @@ const NfCard = (props) => (
       <Button variant="primary" href={props.Link} target="_blank"> 
         {props.isBlog ? "Blog" : "Cliquez ici !"}
       </Button>
+      {"\n"}
+      {"\n"}  
     </Card.Body>
-  </Card>
-);
-// NF STANDS FOR NOS FORMATIONS 
+  </Card>  
+);     
+// NF STANDS FOR NOS FORMATIONS  
 const NF = () => ( 
-  <Container fluid className="project-section">   
-    <h1 className="project-heading">
-      <strong className="purple">Nos formations</strong>
-    </h1>  
-    <div className="d-flex flex-column align-items-center">
-      <NfCard 
-        img={PURPOSE}
-        isBlog={false} 
-        title="Chatify"
-        description=""
-        Link=""  
-      /> 
-      <NfCard
-        img={PURPOSE}
-        isBlog={false}
-        title="Bits-0f-C0de"
-        description=""
-        Link="" 
-      />
-      <NfCard
-        img={PURPOSE}
-        isBlog={false} 
-        title="Editor.io"
-        description=""
-        Link=""              
-      />
-      <NfCard
-        img={PURPOSE}
-        isBlog={false}
-        title="Plant AI"
-        description=""
-        Link="" 
-      />
-      <NfCard
-        img={PURPOSE}
-        isBlog={false}
-        title="Ai For Social Good"
-        description=""
-        Link="" 
-      />
-      <NfCard
-        img={PURPOSE}
-        isBlog={false} 
-        title="Face Recognition and Emotion Detection"
-        description=""
-        Link="" 
-      />
-    </div>
-  </Container>   
+   <Container fluid className="mt-20">   
+     <div className="project-section">  
+     <h2 className={`${styles.heading2} mt-20 titre `}>Nos formations</h2>  
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>  
+       
+          <div className="cards">  
+          <Col  className="project-card"> 
+            <NfCard 
+              img={CLP2}
+              isBlog={false} 
+              title="Introducing Automation for Cisco Solutions (CSAU)"
+              description=""
+              Link=""  
+            /> 
+          </Col> 
+          <Col  className="project-card">
+            <NfCard
+              img={CCC1}
+              isBlog={false}
+              title="Microsoft Azure - Conception et implémentation de solutions d'IA (AI-102T00)"
+              description=""
+              Link="" 
+            />
+          </Col> 
+          <Col className="project-card">
+            <NfCard
+              img={Microsoft}
+              isBlog={false} 
+              title="Microsoft Azure - Conception et implémentation de solutions d'IA (AI-102T00)"
+              description=""
+              Link=""              
+            />
+          </Col>  
+          </div>
+          {/* ANOTHER DIV */}
+          <div className="cards">
+          <Col  className="project-card">
+            <NfCard
+              img={VMAEC}
+              isBlog={false}
+              title="Microsoft Azure - Conception et implémentation de solutions d'IA (AI-102T00)"
+              description=""
+              Link="" 
+            />
+          </Col> 
+          <Col className="project-card">
+            <NfCard
+              img={IT}
+              isBlog={false} 
+              title="Microsoft Azure - Conception et implémentation de solutions d'IA (AI-102T00)"
+              description=""
+              Link="" 
+            />
+          </Col>
+          </div>
+        </Row>
+        </div> 
+         
+   </Container>
+   
 ); 
-
-export default NF;
+export default NF ;  

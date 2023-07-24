@@ -21,8 +21,7 @@ const Page = () => {
         });
     }
   }, []); 
-  return (
-
+  return ( 
     <div>
       {/* Contenu de votre page */}
     </div>

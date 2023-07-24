@@ -2,14 +2,14 @@ import {  AboutUs ,  Clients, CTA,  Stats, Hero, Purpose, AuthPage, ForgotPasswo
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./Tree"; 
-import './index.css' ; 
-import 'react-bootstrap'; 
 import Page from "./Page"; 
 import Reset from "./Reset";
 import ACC from "./components/Pupose_Pages/ACC";
 import LS from "./components/Pupose_Pages/LS";
 import NF from "./components/Pupose_Pages/NF";  
 import Slider from "./components/Slider"; 
+import './index.css' ; 
+import 'react-bootstrap'; 
 const App = () => ( 
 <div className="router">  
 <Router> 

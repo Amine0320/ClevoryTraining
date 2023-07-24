@@ -13,7 +13,7 @@ const FormationU = ({ name, img , link }) =>   (
               </h4> 
             </div> 
           </div> 
-          </a>
+          </a> 
         </div> 
 ) ;  
 // NFU STANDS FOR NOS FORMATIONS PAR UNITES 
