@@ -1,8 +1,9 @@
-import { people01, people02, people03, facebook, instagram, linkedin ,  send, shield, star , youtube } from "../assets/pics"; 
+import {  facebook, instagram, linkedin ,  send, shield, star , youtube } from "../assets/pics"; 
 import {ACTIA , ADACTIM , ATB , BEE ,CAREFFOUR , CERT , CNI , ESPRIT , FUBA , GEANT , OOREDOO , TOPNET , TT , WEVIOO , MIN , ATTIJARI } from "../assets/CLIENTS" ;   
 import { CCC1 , CLP2 , IT , LEARNING , Pearson, VATC , VMAEC  } from "../assets/Partenaires"; 
+import {Axelos , F5 , Fortinet , MBA , Microsoft , PECB , PMI } from "../assets/FU" ;  
 // NAVBAR SECTION
-export const navLinks = [
+export const navLinks = [ 
   {
     id: "Clevory Training",
     title: "Clevory Training",
@@ -35,7 +36,7 @@ export const navLinks = [
   }, 
   {
     id: "Login",
-    title: "Login",
+    title: "Login", 
     link : "Auth" , 
   },
 ];
@@ -67,32 +68,69 @@ export const features = [
   },
 ]; 
 // TESTIMONIALS SECTION 
-// export const feedback = [
-//   {
-//     id: "feedback-1",
-//     content:
-//       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-//     name: "Herman Jensen",
-//     title: "Founder & Leader",
-//     img: people01,
-//   },
-//   {
-//     id: "feedback-2",
-//     content:
-//       "Money makes your life easier. If you're lucky to have it, you're lucky.",
-//     name: "Steve Mark",
-//     title: "Founder & Leader",
-//     img: people02,
-//   },
-//   {
-//     id: "feedback-3",
-//     content:
-//       "It is usually people in the money business, finance, and international trade that are really rich.",
-//     name: "Kenn Gallagher",
-//     title: "Founder & Leader",
-//     img: people03,
-//   },
-// ];
+// FU STANDS FOR FORMATION UNITES 
+export const FU  = [
+  {
+    id: "FU-1", 
+    name: "Cissco",
+    img: CLP2 ,
+    link : "" , 
+  },
+  { 
+    id: "FU-2", 
+    name: "Vmware",
+    img: VATC,
+    link : "" , 
+  },
+  {
+    id: "FU-3", 
+    name: "Veeam",
+    img: VMAEC  ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-4", 
+    name: "Executive MBA ",
+    img: MBA ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-5", 
+    name: "Microsoft",
+    img: Microsoft  ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-6", 
+    name: "F5",
+    img: F5 ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-7", 
+    name: "Fortinet",
+    img: Fortinet  ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-8", 
+    name: "PECB",
+    img: PECB ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-9",
+    name: "Axelos", 
+    img: Axelos  ,
+    link : "" , 
+  }, 
+  {
+    id: "FU-10", 
+    name: "PMI", 
+    img: PMI  ,
+    link : "" , 
+  }, 
+]; 
 // STATS 
 export const stats = [
   {
@@ -274,27 +312,4 @@ content : "Notre centre de formation est votre porte d'entrée vers un avenir pr
   title : "Bienvenue au Centre de Formation Clevory Training !" , 
   content : "Notre entreprise propose des salles de location polyvalentes pour tous types d'événements. Que ce soit pour des réunions d'affaires, des séminaires, des formations, des fêtes, ou tout autre événement, nos salles sont équipées pour répondre à vos besoins. Nous disposons d'une gamme de salles adaptées à différentes capacités, allant des petites salles de réunion aux grandes salles de conférence.\n\nNos installations modernes sont conçues pour offrir confort et commodité à vos invités. Chaque salle est équipée d'un système audiovisuel performant, de mobilier confortable, et d'une connexion Internet haut débit. De plus, notre équipe professionnelle est disponible pour vous aider dans l'organisation de votre événement, de la mise en place technique à la restauration.\n\nQue vous soyez une entreprise, une association, ou un particulier, nous avons la salle idéale pour rendre votre événement mémorable. Contactez-nous dès aujourd'hui pour connaître nos disponibilités et réserver la salle parfaite pour votre prochain événement." , 
   } , 
-   ];    
-export const Card =  [
-  { 
-    id : "0" , 
-    img : "" , 
-    title : "bkakakakaa" , 
-    content : "b;alalala" , 
-    btn : "blalalalaal" ,  
-  } , 
-  { 
-    id : "1" , 
-    img : "" , 
-    title : "bkakakakaa" , 
-    content : "b;alalala" , 
-    btn : "blalalalaal" ,  
-  } , 
-  { 
-    id : "2" , 
-    img : "" , 
-    title : "bkakakakaa" , 
-    content : "b;alalala" , 
-    btn : "blalalalaal" ,  
-  } ,   
-] ; 
+   ];     

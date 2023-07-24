@@ -19,6 +19,5 @@ const Stats = () => (
   </section>
   </div>
   </div>
-); 
-
+);  
 export default Stats;

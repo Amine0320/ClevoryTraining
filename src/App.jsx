@@ -1,4 +1,4 @@
-import {  AboutUs ,  Clients, CTA, Footer, Stats, Hero, Purpose, Navbar, AuthPage, ForgotPasswordPage, Contact, GoToTop, NFU  } from "./components";
+import {  AboutUs ,  Clients, CTA,  Stats, Hero, Purpose, AuthPage, ForgotPasswordPage, Contact, GoToTop, NFU , Navbar , Footer  } from "./components";
 import Partenaires from "./components/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./Tree"; 
@@ -8,9 +8,8 @@ import Page from "./Page";
 import Reset from "./Reset";
 import ACC from "./components/Pupose_Pages/ACC";
 import LS from "./components/Pupose_Pages/LS";
-import NF from "./components/Pupose_Pages/NF"; 
-import BasicSlider from "./components/BasicSlider";
-import Slider from "./components/Slider";
+import NF from "./components/Pupose_Pages/NF";  
+import Slider from "./components/Slider"; 
 const App = () => ( 
 <div className="router">  
 <Router> 
@@ -35,9 +34,8 @@ const App = () => (
           <Route path="/LS" element={<LS/>} /> 
           <Route path="/NF" element={<NF/>} /> 
           <Route path='/Contact' element={<Contact/>}/>    
-          <Route path='/NFU' element={<NFU/>}/>   
-          <Route path='/BS' element={<BasicSlider/>}/>   
-          <Route path='/S' element={<Slider/>}/>  
+          <Route path='/NFU' element={<NFU/>}/>      
+          <Route path='/S' element={<Slider/>}/>   
         </Routes> 
     </Router> 
     <Footer/> 

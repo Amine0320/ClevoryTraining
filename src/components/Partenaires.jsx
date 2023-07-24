@@ -17,7 +17,7 @@ export default function partenaires() {
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}> 
     <h2 className={`${styles.heading2} Titre1  text-black `}>
-    Nos Partenaires   <br className="sm:block hidden" />
+    Nos partenaires éditeurs  <br className="sm:block hidden" />
       </h2>
       {parts.map((parts) => ( 
         <div showDots={true} responsive={responsive}  key={parts.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-1`}>

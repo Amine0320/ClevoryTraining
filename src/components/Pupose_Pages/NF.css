@@ -1,18 +1,18 @@
 /* Project Card CSS  */ 
  .project-section {
-    position: relative !important;
+    /* position: relative !important; */
     padding-top: 150px !important;
     padding-bottom: 30px !important; 
-    background-image: var(--section-background-color) !important;    
+    /* background-image: var(--section-background-color) !important;     */
     overflow-y: hidden; 
     display: flex; 
-    align-items: center;
-    align-content:space-between; 
-    flex-wrap: nowrap; 
+    /* align-items: center; */
+    /* align-content:space-between; 
+    flex-wrap: nowrap;  */
     text-align: center; 
     flex-direction: column; 
     justify-content: space-between; 
-    align-items: center;  
+    align-items: center;   
   } 
   .project-card {
     padding-top: 50px !important;

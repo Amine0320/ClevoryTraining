@@ -1,35 +1,48 @@
-import React from "react";
-// import 'swiper/swiper-bundle.css';
-// import 'swiper/swiper-bundle.min.css'; 
-import SwiperCore, { Navigation, Autoplay } from 'swiper';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'; 
-import { ACTIA, MIN } from "../assets/CLIENTS";
-import { VMAEC } from "../assets/Partenaires";
-SwiperCore.use([Navigation, Autoplay]); 
-const Slider = () => {
-  return ( 
-<Swiper
-      spaceBetween={30}
-      slidesPerView={1}
-      navigation
-      autoplay={{
-        delay: 5000,  
-        disableOnInteraction: false, 
-      }}
-    >
-      <SwiperSlide>
-        <img src={ACTIA} alt="Slide 1" /> 
-      </SwiperSlide>
+import SwiperCore from 'swiper'; // Import SwiperCore and the necessary modules
+import styles from '../style';
+import { clients } from '../constants';
 
-      <SwiperSlide>
-        <img src={MIN} alt="Slide 2" />  
-      </SwiperSlide>
 
-      <SwiperSlide>
-        <img src={VMAEC} alt="Slide 3" /> 
-      </SwiperSlide>
-    </Swiper>
+// Install the Swiper modules
+// SwiperCore.use([Navigation, Pagination]);
+
+const Slider = () => { 
+    const responsive = {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      }; 
+  return (
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.boxWidth}`}>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={7}
+        navigation
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <section className={`${styles.flexCenter} my-4`}>
+          {clients.map((client) => (
+            <SwiperSlide key={client.id}>
+              <div  responsive={responsive} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-1`}>
+                <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain img" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </section>
+      </Swiper> 
+    </div>
+  </div>
   );
 };
 
-export default Slider;  
+export default Slider;

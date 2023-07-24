@@ -28,7 +28,7 @@ const Purpose = () =>  (
       </h2>
       <img src={PURPOSE} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
     </div>  
-    <div className={` flex-col container-card`}>
+    <div className={` flex-col container-card mt-20`}>
       <div className="card">
       {features.map((feature, index) => ( 
         <a key={feature.id} href={feature.link} className="H2 mb-0 w-[100%] h-[50%]">
