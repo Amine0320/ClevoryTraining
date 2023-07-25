@@ -1,31 +1,53 @@
-import { clients , responsive } from "../constants"; 
+import { clients  } from "../constants"; 
 import styles from "../style";
-import React from 'react';  
+import React , {useState} from 'react';  
+import { FaCircle } from 'react-icons/fa'; 
 import '../index.css' ;   
-import "react-multi-carousel/lib/styles.css"; 
+import '../components/Slider/ImageSlider.css' ; 
 
 export default function Clients() {
-  const Clients = clients.map((client) => (
-    <div key={client.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-1`}>
-    <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain img" />
-  </div> 
-  ));   
+  const [current, setCurrent] = useState(0);
+  const length = clients.length;
+  const slidesToShow = 3; 
+
+  const goToSlide = (slideIndex) => {
+    if (slideIndex >= 0 && slideIndex < length) {
+      setCurrent(slideIndex);
+    }
+  };
+  
+  if (!Array.isArray(clients) || clients.length <= 0) {
+    return null;
+  } 
   return ( 
 <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-  <section className={`${styles.flexCenter} my-4`}>
+  <section className={`${styles.flexCenter} my-4 slider `}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}> 
     <h2 className={`${styles.heading2} Titre1  text-black `}>
       Ce qui nous a fait confiance  <br className="sm:block hidden" />
-      </h2>
-      {clients.map((client) => ( 
-        <div showDots={true} responsive={responsive}  key={client.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-1`}>
-          <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain img" />
-        </div> 
-      ))}  
+      </h2> 
+    <div className='slides-container' style={{ transform: `translateX(-${current * (100 / slidesToShow)}%)` }} >
+      {clients.map((client, index) => {
+        return (
+          <div className='slide' key={index}> 
+            <img src={client.logo} alt='client logo' className='image' />
+          </div>
+        ); 
+      })}
+    </div>
+    <div className='navigation-dots'>
+      {clients.map((_, index) => (
+        <FaCircle
+          key={index}
+          className={index === current ? 'dot active' : 'dot'}
+          onClick={() => goToSlide(index)}
+        />
+      ))}
+    </div> 
     </div>  
   </section>  
   </div>
   </div> 
     );  
-};   
+};    

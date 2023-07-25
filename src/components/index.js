@@ -16,7 +16,9 @@ import ACC from "./Pupose_Pages/ACC";
 import Contact from "./Contact/Contact"; 
 import GoToTop from "./GoToTop";
 import NFU from "./NFU";
+import ImageSlider from "./Slider/ImageSlider";
 export {  
+  ImageSlider , 
   NFU , 
   GoToTop , 
   Contact , 
