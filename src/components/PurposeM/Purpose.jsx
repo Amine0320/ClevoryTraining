@@ -2,7 +2,7 @@ import { PURPOSE } from "../../assets/pics";
 import { features } from "../../constants";
 import styles, { layout } from "../../style";
 import '../../index.css' ;  
-// CE QUE NOUS OFFRONS SECTION HERE ! 
+// Purpose Card STANDS FOR THE CARD THAT WILL BE USED IN THE MAIN FUNCTION 
 const PurposeCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-3" : "mb-0"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
@@ -18,6 +18,7 @@ const PurposeCard = ({ icon, title, content, index }) => (
     </div>
   </div>   
 );  
+// CE QUE NOUS OFFRONS SECTION HERE !  
 const Purpose = () =>  (
   <div className={`bg-primary`}> 
       <div className={`${styles.boxWidth}`}> 

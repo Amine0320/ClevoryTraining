@@ -11,7 +11,7 @@ const AccCard = ({  title, content, index }) => (
       <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[20px]"> 
         {content} 
       </p>
-    </div>
+    </div> 
   </div>  
 );  
 // ACC STANDS FOR ACCOMPAGNEMENTS 

@@ -2,6 +2,7 @@ import { LS1 } from "../../assets/pics";
 import { LSS } from "../../constants";
 import styles , {layout} from "../../style"; 
 import '../../index.css' ; 
+// LSSCard STANDS FOR CARD OF LOCATION DES SALLES 
 const LSSCard = ({title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== LSS.length - 1 ? "mb-3" : "mb-0"} feature-card`}> 
     <div className="flex-1 flex flex-col ml-3 ">

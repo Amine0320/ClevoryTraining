@@ -1,8 +1,8 @@
 import styles from "../../style";
 import Button from "../Button/Button"; 
 import '../../index.css' ; 
-
-const CTA = () => (
+// CF STANDS FOR CHERCHER FORMATION 
+const CF = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} box`}>
       <div className={`${styles.boxWidth}`}>
   <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow box`}>
@@ -17,4 +17,4 @@ const CTA = () => (
   </div> 
 );
 
-export default CTA;
+export default CF;  

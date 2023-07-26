@@ -19,8 +19,7 @@ import './Partenaires.css' ;
   
   if (!Array.isArray(parts) || parts.length <= 0) {
     return null;
-  }
-  
+  } 
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>

@@ -112,7 +112,7 @@ const Contact = () => {
           <p>Message envoyé avec succès!</p>
         </div>
       )}
-     </Container>
+     </Container> 
     </>
   );
 };
