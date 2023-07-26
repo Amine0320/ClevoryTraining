@@ -1,6 +1,6 @@
-import styles from "../style";
-import Button from "./Button";
-import '../index.css' ; 
+import styles from "../../style";
+import Button from "../Button/Button"; 
+import '../../index.css' ; 
 
 const CTA = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} box`}>

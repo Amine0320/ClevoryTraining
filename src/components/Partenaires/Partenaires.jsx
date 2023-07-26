@@ -1,9 +1,9 @@
-import {  parts , responsive } from "../constants"; 
-import styles from "../style";
+import {  parts  } from "../../constants"; 
+import styles from "../../style";
 import React , {useState} from 'react';  
 import { FaCircle } from 'react-icons/fa'; 
-import '../components/Slider/ImageSlider.css' ; 
-import '../index.css' ;  
+import '../../components/Slider/ImageSlider.css' ; 
+import '../../index.css' ;  
 
 export default function partenaires() {  
   const [current, setCurrent] = useState(0);

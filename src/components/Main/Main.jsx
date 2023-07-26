@@ -1,6 +1,6 @@
-import styles from "../style"; 
-import GetStarted from "./GetStarted";
-import '../index.css' ; 
+import styles from "../../style"; 
+import GetStarted from "../GS/GetStarted";
+import '../../index.css' ;  
 // First SECTION AFTER NAVBAR HERE !
 const Hero = () => {
   return ( 

@@ -1,9 +1,9 @@
-import { clients  } from "../constants"; 
-import styles from "../style";
+import { clients  } from "../../constants"; 
+import styles from "../../style";
 import React , {useState} from 'react';  
 import { FaCircle } from 'react-icons/fa'; 
-import '../index.css' ;   
-import '../components/Slider/ImageSlider.css' ; 
+import '../../index.css' ;   
+import '../../components/Slider/ImageSlider.css' ; 
 
 export default function Clients() {
   const [current, setCurrent] = useState(0);

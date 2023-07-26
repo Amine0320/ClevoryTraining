@@ -1,6 +1,6 @@
-import { stats } from "../constants";
-import styles from "../style";
-import "../index.css" ; 
+import { stats } from "../../constants";
+import styles from "../../style";
+import "../../index.css" ;  
 // STATS SECTION HERE !
 const Stats = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>

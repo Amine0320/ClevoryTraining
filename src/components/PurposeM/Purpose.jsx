@@ -1,9 +1,9 @@
-import { PURPOSE } from "../assets/pics"; 
-import { features } from "../constants";
-import styles, { layout } from "../style";
-import '../index.css' ; 
+import { PURPOSE } from "../../assets/pics"; 
+import { features } from "../../constants";
+import styles, { layout } from "../../style";
+import '../../index.css' ;  
 // CE QUE NOUS OFFRONS SECTION HERE ! 
-const FeatureCard = ({ icon, title, content, index }) => (
+const PurposeCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-3" : "mb-0"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
@@ -16,8 +16,8 @@ const FeatureCard = ({ icon, title, content, index }) => (
         {content} 
       </p>
     </div>
-  </div>  
-); 
+  </div>   
+);  
 const Purpose = () =>  (
   <div className={`bg-primary`}> 
       <div className={`${styles.boxWidth}`}> 
@@ -32,7 +32,7 @@ const Purpose = () =>  (
       <div className="card">
       {features.map((feature, index) => ( 
         <a key={feature.id} href={feature.link} className="H2 mb-0 w-[100%] h-[50%]">
-        <FeatureCard {...feature} index={index} />  
+        <PurposeCard {...feature} index={index} />  
       </a>   
       ))} 
     </div> 

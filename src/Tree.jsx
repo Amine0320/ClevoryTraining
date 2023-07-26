@@ -1,16 +1,15 @@
-import {  AboutUs ,  Clients, CTA, Stats, Hero, Purpose , Map, ImageSlider} from "./components";
-import Partenaires from "./components/Partenaires";
+import {  AboutUs ,  Clients, CTA, Stats, Hero, Purpose , Map } from "./components";
+import Partenaires from "./components/Partenaires/Partenaires";
 const Tree = () => (
 <div>  
     <Hero /> 
     <Partenaires />  
     <AboutUs/> 
     <Stats/> 
-    <Purpose />  
+    <Purpose />   
     <CTA />  
     <Clients/> 
     <Map />   
-    <ImageSlider /> 
 </div> 
 );
 export default Tree;  

@@ -1,5 +1,5 @@
-import { ABOUT  } from "../assets/pics";
-import styles, { layout } from "../style"; 
+import { ABOUT  } from "../../assets/pics";
+import styles, { layout } from "../../style"; 
 
 const AboutUs = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
