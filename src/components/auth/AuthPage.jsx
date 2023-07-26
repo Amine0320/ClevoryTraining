@@ -5,7 +5,7 @@ import { useState } from 'react';
 const AuthPage = () => {
   const [email, setemail] = useState('')
   const [phone, setphone] = useState('')
-  const [pass, setpass] = useState('')
+  const [pass, setpass] = useState('') 
   const [fulluser, setfullUser] = useState('')
   const [user, setUser] = useState('')  
   useEffect(() => {

@@ -2,10 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button"; 
 import { Container, Row, Col } from "react-bootstrap"; 
-import './NF.css' ; 
 import { CCC1, CLP2, IT, VMAEC } from "../../assets/Partenaires";
 import { Microsoft } from "../../assets/FU";
 import styles from "../../style";
+import './NF.css' ;  
 // NfCard STANDS FOR NOS FORMATIONS CARD 
 const NfCard = (props) => (
   <Card className="project-card-view">
@@ -16,20 +16,19 @@ const NfCard = (props) => (
         {props.description} 
       </Card.Text>
       <Button variant="primary" href={props.Link} target="_blank"> 
-        {props.isBlog ? "Blog" : "Cliquez ici !"}
+        "Cliquez ici !" 
       </Button>
       {"\n"}
       {"\n"}  
     </Card.Body>
-  </Card>  
+  </Card>    
 );     
 // NF STANDS FOR NOS FORMATIONS  
 const NF = () => ( 
    <Container fluid className="mt-20">   
      <div className="project-section">  
-     <h2 className={`${styles.heading2} mt-20 titre `}>Nos formations</h2>  
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>  
-       
+     <h2 className={`${styles.heading2} mt-20 Title  `}>Nos formations</h2>  
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>   
           <div className="cards">  
           <Col  className="project-card"> 
             <NfCard 
@@ -81,9 +80,7 @@ const NF = () => (
           </Col>
           </div>
         </Row>
-        </div> 
-         
-   </Container>
-   
+        </div>   
+   </Container>   
 ); 
 export default NF ;  

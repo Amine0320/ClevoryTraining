@@ -1,9 +1,10 @@
 import React from 'react'; 
 import styles from '../../style'; 
+import './Map.css' ; 
 const Map = () => {  
-  return (
+  return ( 
     <div>
-     <h2 className={`${styles.heading2} Titre2`}>
+     <h2 className={`${styles.heading2} Title `}> 
         Lieu 
       </h2> 
       <div style={{ height: '400px', width: '100%' , marginBottom: '100px' , borderRadius:'200px' }}> 
@@ -16,7 +17,7 @@ const Map = () => {
           allowFullScreen
         ></iframe> 
       </div>
-    </div> 
+    </div>  
   );
 }; 
 export default Map;

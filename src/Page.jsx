@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import axios from 'axios'; 
+import Tree from './Tree';
 const Page = () => {  
   useEffect(() => {
 
@@ -22,8 +23,8 @@ const Page = () => {
     }
   }, []); 
   return ( 
-    <div>
-      {/* Contenu de votre page */}
+    <div> 
+    {/* ya maalem el compte mteek raw jawou behi  */}
     </div>
   );
 };

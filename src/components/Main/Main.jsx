@@ -2,7 +2,7 @@ import styles from "../../style";
 import GetStarted from "../GS/GetStarted";
 import '../../index.css' ;  
 // First SECTION AFTER NAVBAR HERE !
-const Hero = () => {
+const Main  = () => {
   return ( 
     <div className={`bg-primary ${styles.flexStart} HERO1`}>
       <div className={`${styles.boxWidth}`}>
@@ -18,14 +18,14 @@ const Hero = () => {
           Leading <span className="text-gradient">Tomorrow</span> 
         </h1> 
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-  </p>
-      </div> 
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
-      </div>
+        </p> 
+        <div className={`ss:hidden ${styles.flexCenter}`}>
+        <GetStarted/> 
+        </div>  
+      </div>   
     </section>
     </div>
     </div> 
   );
 };
-export default Hero;
+export default Main;

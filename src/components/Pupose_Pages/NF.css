@@ -100,3 +100,7 @@
     color: #727373  ;  
     transform: translate(35%, -50%) ;
   }  
+  .Title {
+    color: #727373; 
+    margin-top: 100px;
+  } 

@@ -1,0 +1,78 @@
+/* Styles généraux pour le carrousel */
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    overflow: hidden; /* Pour cacher les images en dehors du carrousel */
+  }
+  
+  .slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .image {
+    /* Styles pour toutes les images du carrousel */
+    width: 100%;
+    height: 100px; /* Ajustez la hauteur selon vos préférences */
+    object-fit: cover; /* Assurez-vous que l'image couvre complètement le conteneur */
+    border-radius: 10px;
+  } 
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #00AAB3;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #00AAB3;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    margin-right: 130px;
+  }
+  
+  /* Pour afficher les 3 images côte à côte dans le carrousel */
+  @media (max-width: 992px) {
+    .slide {
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  /* Styles pour les points de sélection */
+  .navigation-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    list-style: none; /* Supprimez la puce des points de sélection */
+    padding: 0; /* Supprimez le rembourrage par défaut des points de sélection */
+  } 
+  .dot {
+    font-size: 0.7rem;
+    margin: 120px 9px;
+    /* margin-top: 20px; */
+    cursor: pointer;
+    user-select: none;
+  } 
+  .dot.active {
+    color: #00AAB3; /* Couleur des points actifs */
+  }
+  

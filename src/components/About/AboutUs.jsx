@@ -14,12 +14,11 @@ const AboutUs = () => (
       A propos de nous<br className="sm:block hidden" />
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5 animated-paragraph `}>
-      Clevory Training est un centre de formation et de coaching agréé par le MFPE offrant les formations accréditées les plus prisées sur le marché.
-Avec une large offre dans le domaine des TIC, du management et des soft skills. Clevory Training se positionne en tant que partenaire des entreprises pour les accompagner leur transformation digitale en relevant les nouveaux défis technologiques et managériaux.
+      Clevory Training est un centre de formation et de coaching agréé par le minstere de formation professionelle et de l'emploi (MFPE)  offrant les formations accréditées les plus prisées sur le marché. Avec une large offre dans le domaine des TIC, du management et des soft skills, Clevory Training se positionne en tant que partenaire des entreprises pour les accompagner dans leur transformation digitale.
       </p> 
     </div>
   </section> 
   </div> 
-  </div>
+  </div> 
 );
 export default AboutUs ; 

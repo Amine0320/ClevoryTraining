@@ -6,7 +6,7 @@ import Clients from "./Clients/Clients";
 import CTA from "./CF/CF";
 import Stats from "./Stats/Stats";
 import Footer from "./Footer/Footer"; 
-import Hero from "./Main/Main" ; 
+import Main from "./Main/Main" ; 
 import AuthPage from "./auth/AuthPage" ; 
 import ForgotPasswordPage from "./auth/ForgotPasswordPage";
 import Map from './Map/Map' ;  
@@ -35,5 +35,5 @@ export {
   CTA,
   Stats,
   Footer, 
-  Hero , 
+  Main , 
 };

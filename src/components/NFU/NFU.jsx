@@ -1,6 +1,7 @@
 import React from "react"; 
 import { FU } from "../../constants";
 import styles from "../../style";  
+import './NFU.css' ; 
 // Formation U stands for Formation Par Unite 
 const FormationU = ({ name, img , link }) =>   ( 
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card"> 
@@ -22,7 +23,7 @@ const FormationU = ({ name, img , link }) =>   (
           <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
       
           <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-            <h2 className={styles.heading2}>
+            <h2 className={`${styles.heading2} Title `}>
              Nos formations par éditeurs
             </h2>  
             <div className="w-full md:mt-0 mt-6">
