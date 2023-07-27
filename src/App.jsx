@@ -2,12 +2,12 @@ import {AboutUs ,  Clients,  Stats, Main , Purpose, AuthPage, ForgotPasswordPage
 import Partenaires from "./components/Partenaires/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./Tree"; 
-import Page from "./Page"; 
-import Reset from "./Reset";
+import Page from "./Page/Page"; 
+import Reset from "./Reset/Reset";
 import ACC from "./components/Pupose_Pages/ACC";
 import LS from "./components/Pupose_Pages/LS";
 import NF from "./components/Pupose_Pages/NF";   
-import './index.css' ; 
+import './index.css' ;  
 import 'react-bootstrap'; 
 const App = () => (  
 <div className="router">  
@@ -15,7 +15,7 @@ const App = () => (
  {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
  <GoToTop /> 
       <Navbar />  
-        <Routes>   
+        <Routes>    
           <Route path='/' element={<Tree/>}/>   
           <Route path='/main' element={<Main/>}/>   
           <Route path='/Partenaires' element={<Partenaires/>}/> 
@@ -26,8 +26,8 @@ const App = () => (
           <Route path='/Clients' element={<Clients/>}/>  
           <Route path='/forget' element={<ForgotPasswordPage/>}/>  
           <Route path='/Auth' element={<AuthPage/>}/>  
-          <Route path="/client/confirm/:activationcode" element={<Page />} />
-          <Route path="/reset" element={<Reset/>} /> 
+          <Route path="/client/confirm/:activationcode" element={<Page/>} />
+          <Route path="/reset" element={<Reset/>} />  
           <Route path="/ACC" element={<ACC/>} />  
           <Route path="/LS" element={<LS/>} /> 
           <Route path="/NF" element={<NF/>} /> 

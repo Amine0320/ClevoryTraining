@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-import axios from 'axios'; 
-import Tree from './Tree';
+import axios from 'axios';  
+import { Container } from "react-bootstrap"; 
+import styles from '../style';
+import './Page.css' ; 
 const Page = () => {  
   useEffect(() => {
 
@@ -15,7 +17,7 @@ const Page = () => {
         console.log(axiosUrl)
       axios.post(axiosUrl)
         .then(response => {
-          console.log(response.data);
+          console.log(response.data); 
         })
         .catch(error => {
           console.error(error);
@@ -23,9 +25,14 @@ const Page = () => {
     }
   }, []); 
   return ( 
-    <div> 
-    {/* ya maalem el compte mteek raw jawou behi  */}
-    </div>
+    <Container  className="mt-20">   
+     <div className="project-section">  
+     <h2 className={`${styles.heading2} mt-20 CC  `}>Confirmation de Compte </h2>  
+     <p className={`Topic ${styles.flexCenter} ${styles.paragraph} `}> 
+        Votre compte a ete confimee avec succes. 
+      </p> 
+        </div>     
+   </Container>    
   );
 };
 

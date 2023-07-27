@@ -10,7 +10,7 @@ TO RUN THIS PROJECT YOU NEED TO
 9. npm i hero-slider
 10. npm i yup 
 11. npm i formik 
-12. 
+12. npm i schema 
 TO RUN THE BACKEND YOU NEED TO 
 1. npm install @babel/preset-react @babel/plugin-transform-runtime --save-dev 
 2. npm i express 
