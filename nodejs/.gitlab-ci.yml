@@ -1,0 +1,32 @@
+# .gitlab-ci.yml
+
+image: node:18.15.0
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - npm ci
+    - npm test
+
+build:
+  stage: build
+  script:
+    - npm ci
+    - git pull
+    # Ajoutez ici les étapes de construction de votre projet
+
+docker-build:
+  stage: build
+  script:
+    - npm ci
+    - git pull
+    - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+    - docker build -t amine931/dockerfile:latest .
+    - docker push amine931/dockerfile:latest
+  only:
+    - master
+    - main

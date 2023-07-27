@@ -1,12 +1,13 @@
 const express = require("express")
 const router = express.Router()
 const User = require('../models/user')
+const Data = require('../models/data')
 const bcrypt = require('bcrypt')
 const rateLimit = require('express-rate-limit');
 
 const jwt = require('jsonwebtoken')
 const randomstring = require('randomstring');
-const { sendConfirmationMailer,sendResetMailer } = require('./nodemailer');
+const { sendConfirmationMailer,sendResetMailer, sendContactMailer } = require('./nodemailer');
 router.post('/register',async(req,res)=>{
     data = req.body
     usr = new User(data)
@@ -83,7 +84,7 @@ router.post('/signin', loginLimiter,async(req,res)=>{
            token = jwt.sign(payload,'123456789')
            res.cookie('token', token, { maxAge: 900000, httpOnly: true, sameSite: 'lax', });
            user.token = token
-           console.log("log in worked")
+           res.send("log in mcha")
            user.save()
         }
     }
@@ -92,7 +93,7 @@ router.post('/confirm/:activationcode',async(req,res)=>{
     User.findOne({ActivationCode:req.params.activationcode})
     .then((user)=>{
         if(!user){
-            console.log("Error !")
+            console.log("mafama chy")
         }
         else{
              user.isActive = true
@@ -111,12 +112,12 @@ router.post('/reset',async(req,res)=>{
     User.findOne({email:data.email})
     .then((user)=>{
         if(!user){
-            res.send("Error ! ")
+            res.send("mafama chy")
         }
         else{
             const randomString = randomstring.generate();
             sendResetMailer(data.email,randomString)
-            res.send("Done ! ")
+            res.send("mrgl")
         }
     }
     
@@ -127,7 +128,7 @@ router.put('/resetpassword/:activationcode',async(req,res)=>{
     User.findOne({ActivationCode:req.params.activationcode})
     .then((user)=>{
         if(!user){
-            res.send("Error !")
+            res.send("mafama chy")
         }
         else{
              const salt = bcrypt.genSaltSync(10)
@@ -142,6 +143,7 @@ router.put('/resetpassword/:activationcode',async(req,res)=>{
     
     )
 })
+
 router.get('/data/:nameobject',(req,res)=>{
     const tok = req.cookies.token;
     nameobjecct = req.params.nameobject
@@ -163,12 +165,20 @@ router.get('/data/:nameobject',(req,res)=>{
     }).catch((err)=>{
         res.send(err)
     })
-}) 
+})
+
+router.post('/contact',(req,res)=>{
+    data = req.body
+    console.log(data)
+    sendContactMailer(data.email,data.subject)
+})
 
 router.post('/logout',async(req,res)=>{
 
-    res.clearCookie("token") 
-   res.send("logout worked")
+    res.clearCookie("token")
+   res.send("logout mchat")
     
 })
+
+
 module.exports = router

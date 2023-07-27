@@ -18,8 +18,8 @@ module.exports.sendConfirmationMailer = (email, token) => {
     from: process.env.SOURCE_MAIL,
     to: email,
     subject: 'Confirmation account',
-    text: `To confirm your account, click on the following link: ${link1}`,
-  }; 
+    text: `To confir your account, click on the following link: ${link1}`,
+  };
 
   return transport
     .sendMail(mailOptions)
@@ -38,6 +38,24 @@ module.exports.sendResetMailer = (email,token) => {
     to: email,
     subject: 'Password Reset',
     text: `To reset your password, click on the following link: ${link}`,
+  };
+
+  return transport
+    .sendMail(mailOptions)
+    .then((info) => {
+      console.log('Message sent: %s', info.messageId);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+module.exports.sendContactMailer = (email,subject) => {
+
+  const mailOptions = {
+    from: email ,
+    to: process.env.SOURCE_MAIL,
+    subject: 'Contact mail',
+    text: `mail:${email}, subjecct:${subject} `,
   };
 
   return transport
