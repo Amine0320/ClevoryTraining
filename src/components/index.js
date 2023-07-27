@@ -3,7 +3,7 @@ import Navbar from "./nav/Navbar";
 import AboutUs from "./About/AboutUs";
 import Purpose from "./PurposeM/Purpose";
 import Clients from "./Clients/Clients";
-import CTA from "./CF/CF";
+import CF from "./CF/CF";
 import Stats from "./Stats/Stats";
 import Footer from "./Footer/Footer"; 
 import Main from "./Main/Main" ; 
@@ -16,8 +16,8 @@ import ACC from "./Pupose_Pages/ACC";
 import Contact from "./Contact/Contact"; 
 import GoToTop from "./GTT/GoToTop";
 import NFU from "./NFU/NFU";
-import ImageSlider from "./Slider/ImageSlider";
-export {  
+import ImageSlider from "./Slider/ImageSlider";  
+export {     
   ImageSlider , 
   NFU , 
   GoToTop , 
@@ -32,7 +32,7 @@ export {
   Purpose,
   AboutUs,  
   Clients,
-  CTA,
+  CF,
   Stats,
   Footer, 
   Main , 

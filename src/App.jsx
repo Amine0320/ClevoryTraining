@@ -1,4 +1,4 @@
-import {AboutUs ,  Clients, CTA,  Stats, Main , Purpose, AuthPage, ForgotPasswordPage, Contact, GoToTop, NFU , Navbar , Footer  } from "./components";
+import {AboutUs ,  Clients,  Stats, Main , Purpose, AuthPage, ForgotPasswordPage, Contact, GoToTop, NFU , Navbar , Footer, CF  } from "./components";
 import Partenaires from "./components/Partenaires/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./Tree"; 
@@ -9,7 +9,7 @@ import LS from "./components/Pupose_Pages/LS";
 import NF from "./components/Pupose_Pages/NF";   
 import './index.css' ; 
 import 'react-bootstrap'; 
-const App = () => ( 
+const App = () => (  
 <div className="router">  
 <Router> 
  {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
@@ -22,7 +22,7 @@ const App = () => (
           <Route path='/About' element={<AboutUs/>}/> 
           <Route path='/Stats' element={<Stats/>}/>
           <Route path='/Purpose' element={<Purpose/>}/>
-          <Route path='/Cta' element={<CTA/>}/> 
+          <Route path='/CF' element={<CF/>}/> 
           <Route path='/Clients' element={<Clients/>}/>  
           <Route path='/forget' element={<ForgotPasswordPage/>}/>  
           <Route path='/Auth' element={<AuthPage/>}/>  

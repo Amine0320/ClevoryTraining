@@ -23,9 +23,9 @@ import './Partenaires.css' ;
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <section className={`${styles.flexCenter} my-4 slider`}>
+        <section className={`${styles.flexCenter} my-4 slider`}> 
           <div className={`${styles.flexCenter} flex-wrap w-full`}>
-            <h2 className={`${styles.heading2} Titre1 text-black `}>
+            <h2 className={`${styles.heading2} Titre1  text-black `}>
               Nos partenaires éditeurs <br className="sm:block hidden" />
             </h2>
             <div className='slides-container'style={{ transform: `translateX(-${current * (100 / slidesToShow)}%)` }}>

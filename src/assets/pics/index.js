@@ -22,8 +22,10 @@ import test3 from "../pics_website/test3.png";
 import HERO1 from "./HERO1.png" ; 
 import NF1 from "../pics_website/NF1.jpg" ;  
 import LS1 from "../pics_website/LS1.jpg" ;  
-import ACC1 from "../pics_website/ACC1.jpg" ;   
+import ACC1 from "../pics_website/ACC1.jpg" ;  
+import MAP  from "../pics_website/Map.png";  
 export { 
+  MAP , 
   NF1 , 
   ACC1 , 
   LS1 , 

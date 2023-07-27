@@ -1,6 +1,6 @@
 import styles from "../../style";
 import Button from "../Button/Button"; 
-import '../../index.css' ; 
+import '../../index.css' ;  
 // CF STANDS FOR CHERCHER FORMATION 
 const CF = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} box`}>
@@ -15,6 +15,6 @@ const CF = () => (
   </section>
   </div> 
   </div> 
-);
+); 
 
 export default CF;  

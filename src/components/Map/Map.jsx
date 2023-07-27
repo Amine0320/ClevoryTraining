@@ -1,11 +1,13 @@
 import React from 'react'; 
 import styles from '../../style'; 
-import './Map.css' ; 
+import './Map.css' ;  
+// import { MAP } from '../../assets/pics';
 const Map = () => {  
   return ( 
-    <div>
-     <h2 className={`${styles.heading2} Title `}> 
-        Lieu 
+    <div> 
+      {/* <img src={MAP} alt="" className="Icon"/>    */}
+     <h2 className={`${styles.heading2} TitleM `}> 
+        Localisation
       </h2> 
       <div style={{ height: '400px', width: '100%' , marginBottom: '100px' , borderRadius:'200px' }}> 
         <iframe
@@ -14,8 +16,8 @@ const Map = () => {
           height="100%"
           width="100%"
           frameBorder="0"
-          allowFullScreen
-        ></iframe> 
+          allowFullScreen 
+        ></iframe>  
       </div>
     </div>  
   );

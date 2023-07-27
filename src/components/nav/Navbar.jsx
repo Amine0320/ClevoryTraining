@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css"; 
 import { LOGO1 } from "../.././assets/pics";  
-import { navLinks } from "../../constants";
+import { navLinks } from "../../constants"; 
 
 function Navbar() { 
     const [active, setActive] = useState("");  
@@ -39,14 +39,14 @@ function Navbar() {
               className={`font-poppins font-normal cursor-pointer text-[16px] ${
                 active === nav.title ? "text-white" : "text-dimWhite"
               }`}
-              onClick={() => setActive(nav.title)} // Set the active item on click
+              onClick={() => setActive(nav.title)} 
             >
               <a href={nav.link} className="H2">
                 {nav.title}
                 <div className="line" />
               </a>
-            </li>
-          ))}
+            </li> 
+          ))}  
         </ul>
         <div onClick={navToggle} className={icon}>
           <div className="line1"></div>
