@@ -79,12 +79,14 @@
     color: #fff !important;
     background-color: #1DA9B1 !important;
     border-color: #1DA9B1 !important;
+    border-radius: 0 !important; 
   }
   
   .btn-primary:hover {
     color: #fff !important;
     background-color: #1DA9B1 !important;
     border-color: #1DA9B1 !important;
+    border-radius: 0 !important; 
   }
   .btn:focus {
     outline: none !important;
@@ -102,5 +104,21 @@
   }  
   .Title {
     color: #727373; 
-    margin-top: 100px; 
-  } 
+    margin-top: 100px;    
+    margin-right: 600px;
+   } 
+   .img-luxurious {
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    height: 100%;
+    width: 650px; 
+    display: block;
+    margin: 0 auto; 
+    transform: translateX(-10px); 
+  }  
+  .img-luxurious:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }  
+  
+   

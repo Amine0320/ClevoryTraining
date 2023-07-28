@@ -1,5 +1,6 @@
 import { ABOUT  } from "../../assets/pics";
 import styles, { layout } from "../../style"; 
+import './About.css' ; 
 
 const AboutUs = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
@@ -18,7 +19,7 @@ const AboutUs = () => (
       </p> 
     </div>
   </section> 
-  </div> 
+  </div>  
   </div> 
 );
 export default AboutUs ; 

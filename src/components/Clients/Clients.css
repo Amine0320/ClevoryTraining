@@ -73,3 +73,45 @@
     color: #00AAB3; /* Couleur des points actifs */
   }
   
+/* Css for partenaires and clients logo to delete the white background and adjust them  */ 
+.img {
+  width: 15%; 
+  aspect-ratio: 4/3;  
+  object-fit: contain; 
+  mix-blend-mode: color-burn; 
+
+}
+/* Css for The Title of Partenaires and Clients Here */
+.Titre {
+  transform: translate(35%, -50%) ; 
+  color: #727373  ;
+  margin-right: 550px;
+  margin-top: 80px;
+
+}  
+.Titre1 { 
+  transform: translate(25%, -50%) ;  
+  color: #727373  ;
+  margin-right: 450px;
+  margin-top: 80px;
+ 
+} 
+.Titre2 {
+  transform: translate(35%, -50%) ; 
+  color: #727373  ;
+  display: flex; 
+  align-items: center; 
+  margin-top: 100px;
+  margin-left: 120px;
+
+}
+@media screen and (min-width: 768px) { 
+  .Titre1 {
+    font-size: 36px; 
+  }
+}
+@media screen and (min-width: 1024px) { 
+  .Titre1  {
+    font-size: 48px; 
+  } 
+}  

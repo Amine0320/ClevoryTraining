@@ -108,3 +108,20 @@ a {
     display: flex; 
   margin-right: 350px;
 }
+/* new css for navbar  */ 
+.navbar-fixed {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 999; 
+  margin-left: 0px; 
+} 
+.nav {
+  background-color: fffbff ; 
+  display: flex; 
+}
+.logo-nav {
+  margin-left: 0px;
+  margin-right: 300px;
+  width: 150px; 
+}  

@@ -1,7 +1,7 @@
-import {ACC1} from "../../assets/pics";
-import {ACCC} from "../../constants";
-import styles , {layout} from "../../style"; 
-import '../../index.css' ;  
+import {ACC1} from "../../../assets/pics";
+import {ACCC} from "../../../constants";
+import styles , {layout} from "../../../style"; 
+import './ACC.css' ;   
 const AccCard = ({  title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== ACCC.length - 1 ? "mb-3" : "mb-0"} feature-card`}>  
     <div className="flex-1 flex flex-col ml-3 ">

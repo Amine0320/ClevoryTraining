@@ -72,7 +72,7 @@ const AuthPage = () => {
       </div>
       <div className="form-container sign-in-container">
         <form  encType="multipart/form-data"  onSubmit={handleSignIn}>
-          <h1>Se connecter </h1>
+          <h1>Se connecter </h1> 
           <input type="text" placeholder="Email Ou Nom d'utilisateur" name="username" onChange={(e) => {  const value = e.target.value;
               if (value.includes("@")) {
                 setemail(value);

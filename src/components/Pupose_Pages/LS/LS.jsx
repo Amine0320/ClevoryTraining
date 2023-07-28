@@ -1,7 +1,8 @@
-import { LS1 } from "../../assets/pics";
-import { LSS } from "../../constants";
-import styles , {layout} from "../../style"; 
-import '../../index.css' ; 
+import { LS1 } from "../../../assets/pics";
+import { LSS } from "../../../constants";
+import styles , {layout} from "../../../style"; 
+import './LS.css' ; 
+import { Container } from "react-bootstrap"; 
 // LSSCard STANDS FOR CARD OF LOCATION DES SALLES 
 const LSSCard = ({title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== LSS.length - 1 ? "mb-3" : "mb-0"} feature-card`}> 
@@ -17,15 +18,16 @@ const LSSCard = ({title, content, index }) => (
 ); 
 // LS STANDS FOR LOCATIONS DES SALLES 
 const LS = () => (
+  <Container fluid  className="mt-20">  
     <div className={`bg-primary`}> 
     <div className={`${styles.boxWidth}`}> 
 <section id="features" className={layout.section} >
-  <div className={layout.sectionInfo}>
+  <div className={layout.sectionInfo2}> 
     <h2 className={`${styles.heading2} mb-10 mt-20 PurposeT `}> 
     Location des salles  <br className="sm:block hidden" />
     </h2>
-    <img src={LS1} alt="AboutUs" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
-  </div>  
+    <img src={LS1} alt="LS" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
+  </div>   
   <div className={`flex-col container-card`}>
     <div className="card1">
     {LSS.map((feature, index) => ( 
@@ -38,5 +40,6 @@ const LS = () => (
 </section>
 </div>
 </div>
+</Container>   
 );
 export default LS;  

@@ -1,7 +1,7 @@
 import styles from "../../style";
 import { LOGO1  } from "../../assets/pics";
-import { socialMedia } from "../../constants";
-import '../../index.css' ;   
+import { socialMedia } from "../../constants";  
+import './Footer.css' ; 
 const Footer = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} footer`}>
   <div className={`${styles.boxWidth}`}>

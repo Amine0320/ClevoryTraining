@@ -1,7 +1,7 @@
 import styles from "../../style"; 
-import CUF from "../CUF/CUF.";
 import '../../index.css' ;   
 import Button from "../Button/Button"; 
+import './Main.css' ; 
 // First SECTION AFTER NAVBAR HERE !
 const Main  = () => {
   return ( 

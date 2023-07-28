@@ -4,9 +4,9 @@ import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ;
 import Tree from "./Tree"; 
 import Page from "./Page/Page"; 
 import Reset from "./Reset/Reset";
-import ACC from "./components/Pupose_Pages/ACC";
-import LS from "./components/Pupose_Pages/LS";
-import NF from "./components/Pupose_Pages/NF";   
+import ACC from "./components/Pupose_Pages/ACC/ACC";
+import LS from "./components/Pupose_Pages/LS/LS";
+import NF from "./components/Pupose_Pages/NF/NF";   
 import './index.css' ;  
 import 'react-bootstrap'; 
 const App = () => (  
@@ -15,7 +15,7 @@ const App = () => (
  {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
  <GoToTop /> 
       <Navbar />  
-        <Routes>    
+        <Routes>     
           <Route path='/' element={<Tree/>}/>   
           <Route path='/main' element={<Main/>}/>   
           <Route path='/Partenaires' element={<Partenaires/>}/> 
@@ -35,7 +35,7 @@ const App = () => (
           <Route path='/NFU' element={<NFU/>}/>          
         </Routes> 
     </Router> 
-    <Footer/> 
+    <Footer/>  
 </div>  
 ); 
 export default App;
