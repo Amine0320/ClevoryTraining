@@ -9,7 +9,7 @@ export const navLinks = [
     title: "Clevory Training",
     link:"/", 
   },
-  {
+  { 
     id: "Nos Formations",
     title: "Nos Formations",
     link:"NF",
@@ -41,9 +41,9 @@ export const navLinks = [
   },
 ];
 // FEATURES SECTION 
-export const features = [
+export const PurposeD  = [
   {
-    id: "feature-1",
+    id: "pur-1",
     icon: star,
     title: "Nos Formations",
     content:
@@ -51,7 +51,7 @@ export const features = [
     link:"/NF" , 
   },
   {
-    id: "feature-2",
+    id: "pur-2",
     icon: shield,
     title: "Accompagnement",
     content:
@@ -59,15 +59,14 @@ export const features = [
       link:"/ACC" , 
   },
   {
-    id: "feature-3",
+    id: "pur-3",
     icon: send, 
     title: "Location de salles",
     content:
       "Location des salles de formation et réunion avec toutes les commoditées.",
       link:"/LS" , 
   },
-]; 
-// TESTIMONIALS SECTION 
+];  
 // FU STANDS FOR FORMATION UNITES 
 export const FU  = [
   {

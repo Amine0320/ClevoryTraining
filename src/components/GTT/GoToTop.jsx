@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { Wrapper } from "../../style";
+import { Wrapper } from "./GTT.js";  
 // GTT NAME OF COMPONENT STANDS FOR GO TO TOP THAT IS NAME OF FUNCTION 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
