@@ -14,16 +14,16 @@ const FormationU = ({ name, img , link }) =>   (
               </h4> 
             </div> 
           </div> 
-          </a> 
+          </a>  
         </div> 
 ) ;  
-// NFU STANDS FOR NOS FORMATIONS PAR UNITES 
+// NFU STANDS FOR NOS FORMATIONS PAR UNITES  
       const NFU = () => (  
                     <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
           <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
       
           <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-            <h2 className={`${styles.heading2}`}> 
+            <h2 className={`${styles.heading2}`}>  
              Nos formations par éditeurs
             </h2>  
             <div className="w-full md:mt-0 mt-6">

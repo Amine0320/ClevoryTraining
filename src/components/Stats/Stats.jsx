@@ -1,6 +1,6 @@
 import { stats } from "../../constants";
-import styles from "../../style";
-import "../../index.css" ;  
+import styles from "../../style"; 
+import './Stats.css' ; 
 // STATS SECTION HERE !
 const Stats = () => (
   <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
@@ -14,7 +14,7 @@ const Stats = () => (
         <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3 stat-title">
           {stat.title}
         </p>
-      </div>
+      </div> 
     ))}
   </section>
   </div>

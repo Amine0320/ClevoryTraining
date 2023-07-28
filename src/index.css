@@ -106,31 +106,15 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-}
-/*  */
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px; 
-}
-.feedback-container { 
-  margin-left: 100px;
 } 
-.feedback-card { 
-  background: transparent;
-} 
-.feedback-card:hover {
-  background: #1CA9B1 ; 
-} 
-/*  */
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(123px);
-}
-
+} 
 .pink__gradient {
   background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
   filter: blur(900px);
 }
-
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
@@ -139,13 +123,6 @@
 .router {
 overflow-x: hidden;
 }  
-/* stats new css  */
-.stat-val { 
-  color: #1CA9B1 ;
-} 
-.stat-title {
-  color: #727373 ;
-}
 /* CSS FOR ALL TITLES  */ 
 .H1 {
   color: #727373 ;  
@@ -162,8 +139,7 @@ overflow-x: hidden;
 .animated-paragraph {
   opacity: 0;
   animation: moveWordByWord 1s forwards;
-}
-
+} 
 @keyframes moveWordByWord {
   0% {
     opacity: 0;
@@ -173,16 +149,7 @@ overflow-x: hidden;
     opacity: 1;
     transform: translateX(0);
   }
-}
-/* CSS FOR THE FOOTER  */ 
-.social { 
-  width: 200px; 
-  display: flex;
-  color: black;
 } 
-.img-social {
-  color: #33bbcf;
-}
 /* css for card  */ 
 .card {
   display: flex ; 

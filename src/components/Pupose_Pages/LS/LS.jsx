@@ -18,7 +18,7 @@ const LSSCard = ({title, content, index }) => (
 ); 
 // LS STANDS FOR LOCATIONS DES SALLES 
 const LS = () => (
-  <Container fluid  className="mt-20">  
+  <Container fluid className="mt-20">  
     <div className={`bg-primary`}> 
     <div className={`${styles.boxWidth}`}> 
 <section id="features" className={layout.section} >
@@ -26,16 +26,16 @@ const LS = () => (
     <h2 className={`${styles.heading2} mb-10 mt-20 PurposeT `}> 
     Location des salles  <br className="sm:block hidden" />
     </h2>
-    <img src={LS1} alt="LS" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious" /> 
+    <img src={LS1} alt="LS" className="mt-10 w-[100%] h-[100%] relative z-[5] object-contain img-luxurious " /> 
   </div>   
-  <div className={`flex-col container-card`}>
-    <div className="card1">
+  <div className={`fcontainer-card`}>
+    <div className="card1 ">
     {LSS.map((feature, index) => ( 
       <a key={feature.id}  className="H2 mb-0 w-[100%] h-[50%]">
       <LSSCard {...feature} index={index} />  
     </a>   
     ))} 
-  </div> 
+  </div>  
   </div>
 </section>
 </div>

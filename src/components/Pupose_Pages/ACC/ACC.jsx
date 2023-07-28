@@ -12,12 +12,12 @@ const AccCard = ({  title, content, index }) => (
         {content} 
       </p>
     </div> 
-  </div>  
+  </div>   
 );  
 // ACC STANDS FOR ACCOMPAGNEMENTS 
-const ACC = () => ( 
+const ACC = () => (  
 <div className={`bg-primary`}> 
-    <div className={`${styles.boxWidth}`}> 
+    <div className={`${styles.boxWidth}`}>  
 <section id="features" className={layout.section} >
   <div className={layout.sectionInfo}>
     <h2 className={`${styles.heading2} mb-10 mt-20  PurposeT `}>  

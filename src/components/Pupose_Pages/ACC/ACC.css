@@ -20,8 +20,4 @@
     display: block;
     margin: 0 auto; 
     transform: translateX(-10px); 
-  }  
-  .img-luxurious:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }  
+  }   

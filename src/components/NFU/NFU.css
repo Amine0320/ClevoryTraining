@@ -1,3 +1,16 @@
 .Title {
     color: #737373;     
   }
+  .feedback-container .feedback-card:last-child {
+    margin-right: 0px; 
+  }
+  .feedback-container { 
+    margin-left: 100px;
+  } 
+  .feedback-card { 
+    background: transparent;
+  } 
+  .feedback-card:hover {
+    background: #1CA9B1 ; 
+  }  
+  

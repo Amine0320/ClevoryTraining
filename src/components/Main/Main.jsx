@@ -1,7 +1,6 @@
-import styles from "../../style"; 
-import '../../index.css' ;   
+import styles from "../../style";  
 import Button from "../Button/Button"; 
-import './Main.css' ; 
+import './Main.css' ;  
 // First SECTION AFTER NAVBAR HERE !
 const Main  = () => {
   return ( 
@@ -14,21 +13,17 @@ const Main  = () => {
             Learning 
             <span className="text-gradient">Today</span>{" "}
           </h1>   
-        </div> 
+        </div>  
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-black ss:leading-[100.8px] leading-[75px] w-full Leading ">
           Leading <span className="text-gradient">Tomorrow</span> 
         </h1> 
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         </p> 
         <div>
-        <a href="/NF"> 
+        <a href="/NF">  
         <Button/> 
         </a> 
-        </div> 
-        {/* GetStarted Button if needed  */}
-        {/* <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted/> 
-        </div>   */}
+        </div>  
       </div>   
     </section> 
     </div>

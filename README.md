@@ -11,6 +11,7 @@ TO RUN THIS PROJECT YOU NEED TO
 10. npm i yup 
 11. npm i formik 
 12. npm i schema 
+13. npm i styled-components 
 TO RUN THE BACKEND YOU NEED TO 
 1. npm install @babel/preset-react @babel/plugin-transform-runtime --save-dev 
 2. npm i express 

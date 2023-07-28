@@ -2,7 +2,7 @@ import {  facebook, instagram, linkedin ,  send, shield, star , youtube } from "
 import {ACTIA , ADACTIM , ATB , BEE ,CAREFFOUR , CERT , CNI , ESPRIT , FUBA , GEANT , OOREDOO , TOPNET , TT , WEVIOO , MIN , ATTIJARI } from "../assets/CLIENTS" ;   
 import { CCC1 , CLP2 , IT , LEARNING , Pearson, VATC , VMAEC  } from "../assets/Partenaires" ; 
 import {Axelos , F5 , Fortinet , MBA , Microsoft , PECB , PMI } from "../assets/FU" ;   
-// NAVBAR SECTION 
+// NAVBAR SECTION Dictionnary 
 export const navLinks = [ 
   {
     id: "Clevory Training",
@@ -40,7 +40,7 @@ export const navLinks = [
     link : "Auth" , 
   },
 ];
-// FEATURES SECTION 
+// FEATURES SECTION Dictionnary  
 export const PurposeD  = [
   {
     id: "pur-1",
@@ -68,6 +68,7 @@ export const PurposeD  = [
   },
 ];  
 // FU STANDS FOR FORMATION UNITES 
+// FU DICTIONARY 
 export const FU  = [
   {
     id: "FU-1", 
@@ -130,7 +131,8 @@ export const FU  = [
     link : "" , 
   }, 
 ]; 
-// STATS 
+// STATS Stands for statistiques 
+// STATS DICTIONARY 
 export const stats = [
   {
     id: "stats-1",
@@ -153,8 +155,8 @@ export const stats = [
     value: "200+",
   }, 
 ];
-
 // SOCIAL MEDIA LINKS 
+// SOCIAL MEDIA DICTIONARY 
 export const socialMedia = [
   {
     id: "social-media-1",
@@ -178,6 +180,7 @@ export const socialMedia = [
   },
 ];
 // Clients Section 
+// CLIENTS DICTIONARY 
 export const clients = [
   {
     id: "client-1",
@@ -249,6 +252,7 @@ export const clients = [
   },
 ];
 // Partenaires Section 
+// PARTENAIRES DICTIONARY 
 export const parts  = [
   {
     id: "partenaire-1",
