@@ -1,3 +1,4 @@
+import styles from '../../style';
 import './PF.css' ;    
 // const AccCard = ({  title, content, index }) => (
 //   <div className={`flex flex-row p-6 rounded-[20px] ${index !== ACCC.length - 1 ? "mb-3" : "mb-0"} feature-card`}>  
@@ -8,13 +9,17 @@ import './PF.css' ;
 //       <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[20px]"> 
 //         {content} 
 //       </p>
-//     </div> 
-//   </div>   
+//     </div>  
+//   </div>    
 // );  
 // PF STANDS FOR Page Formation  
 const PF = () => (  
-<div>
-
+<div> 
+    <Container fluid >
+        <div className={`${styles.boxWidth}`}>  
+        
+        </div>
+    </Container>
 </div>
 );
 export default PF ;  
