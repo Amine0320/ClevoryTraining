@@ -1,7 +1,7 @@
-import {  AboutUs ,  Clients,Stats, Main , Purpose , Map, CF ,  } from "./components";
+import {  AboutUs ,  Clients,Stats, Main , Purpose , Map, CF, } from "./components";
 import Partenaires from "./components/Partenaires/Partenaires"; 
 const Tree = () => (
-<div>  
+<div>    
     <Main />    
     <Partenaires />  
     <AboutUs/> 

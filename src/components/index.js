@@ -17,7 +17,11 @@ import Contact from "./Contact/Contact";
 import GoToTop from "./GTT/GoToTop";
 import NFU from "./NFU/NFU";
 import ImageSlider from "./Slider/ImageSlider";  
+import PF from "./PF/PF";
+import CB from "./Chat/CB";
 export {     
+  CB , 
+  PF ,   
   ImageSlider , 
   NFU , 
   GoToTop , 

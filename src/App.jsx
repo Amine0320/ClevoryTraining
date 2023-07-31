@@ -13,7 +13,7 @@ const App = () => (
 <div className="router">  
 <Router> 
  {/* INSPIRED BY MY COLLEGUE MOHAMED AMINE BEN MANSOUR (COPYRIGHTS)  */} 
- <GoToTop /> 
+ <GoToTop />  
       <Navbar />  
         <Routes>     
           <Route path='/' element={<Tree/>}/>   
