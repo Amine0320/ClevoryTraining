@@ -1,4 +1,4 @@
-import {AboutUs ,  Clients,  Stats, Main , Purpose, AuthPage, ForgotPasswordPage, Contact, GoToTop, NFU , Navbar , Footer, CF  } from "./components";
+import {AboutUs ,  Clients,  Stats, Main , Purpose, AuthPage, ForgotPasswordPage, Contact, GoToTop, NFU , Navbar , Footer, CF, PF  } from "./components";
 import Partenaires from "./components/Partenaires/Partenaires";
 import {BrowserRouter as Router , Route , Routes } from 'react-router-dom' ; 
 import Tree from "./Tree"; 
@@ -33,6 +33,7 @@ const App = () => (
           <Route path="/NF" element={<NF/>} /> 
           <Route path='/Contact' element={<Contact/>}/>    
           <Route path='/NFU' element={<NFU/>}/>          
+          <Route path='/PF' element={<PF/>}/>   
         </Routes> 
     </Router> 
     <Footer/>  
